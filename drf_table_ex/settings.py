@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'musics',
+    'risk',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +80,11 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+"""
+
+#This part displays the SQL in the terminal
 
 LOGGING = {
     'version': 1,
@@ -155,6 +161,10 @@ LOGGING = {
         # }
     }
 }
+
+
+"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators

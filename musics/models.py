@@ -21,6 +21,9 @@ class Music(models.Model):
     last_modify_date = models.DateTimeField(auto_now=True, null=True)
     created = models.DateTimeField(auto_now_add=True, null=True)
 
+    def __str__(self):        
+        return self.song
+
     class Meta:
         db_table = "music"
 
