@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Django-DRF Demo</title>
+    <title>Musics</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}" type="text/css"/>
     <link rel="stylesheet" href="{% static 'stylesheets/jquery.dataTables.css' %}" type="text/css"/>
@@ -10,8 +10,8 @@
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>Risks</h1>
-        <p>REST API CRUD</p>
+        <h1>Musics</h1>
+        <p>>REST API CRUD</p>
     </div>
 
     <!-- New  button -->
@@ -24,8 +24,8 @@
         <thead>
         <tr>
             <th>id</th>
-            <th>title</th>
-            <th>description</th>
+            <th>song</th>
+            <th>singer</th>
             <th>last_modify_date</th>
             <th>created</th>
             <th>action</th>
@@ -50,14 +50,14 @@
                 <div class="modal-body">
                     <form role="form">
                         <div class="form-group">
-                            <label for="title"><span class="glyphicon glyphicon-pencil"></span> Title</label>
-                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
+                            <label for="song"><span class="glyphicon glyphicon-pencil"></span> Song</label>
+                            <input type="text" class="form-control" id="song" name="song" placeholder="Enter Song"
                                    required="true">
                         </div>
                         <div class="form-group">
-                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
-                            <input type="text" class="form-control" id="description" name="description"
-                                   placeholder="Enter Description" required="true">
+                            <label for="singer"><span class="glyphicon glyphicon-file"></span> Singer</label>
+                            <input type="text" class="form-control" id="singer" name="singer"
+                                   placeholder="Enter Singer" required="true">
                         </div>
                         <input type="hidden" id="type" name="type" value="">
                         <button type="submit" class="btn btn-success btn-block"><span
@@ -90,6 +90,6 @@
 <script src="{% static 'js/jquery.dataTables.js' %}"></script>
 
 <!-- Call to custom js for datatable -->
-<script src="{% static 'js/datatable_risk.js' %}"></script>
+<script src="{% static 'js/datatable_music.js' %}"></script>
 </body>
 </html>

@@ -19,6 +19,8 @@ let table = $('#datatables').DataTable({
     ]
 });
 
+
+
 let id = 0;
 
 $('#datatables tbody').on('click', 'button', function () {

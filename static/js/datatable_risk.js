@@ -1,6 +1,6 @@
 let table = $('#datatables').DataTable({
-    "processing": true,     //comment out to cancel server side
-    "serverSide": true,     //comment out to cancel server side
+    "processing": true,    //comment out to cancel server side
+    "serverSide": true,    //comment out to cancel server side
     "ajax": {
         "url": "/api/risk/",
         "type": "GET"
@@ -8,7 +8,9 @@ let table = $('#datatables').DataTable({
     "columns": [
         {"data": "id"},
         {"data": "title"},
+        {"data": "parent"},
         {"data": "description"},
+        {"data": "slug"},        
         {"data": "last_modify_date"},
         {"data": "created"},
         {
@@ -27,7 +29,9 @@ $('#datatables tbody').on('click', 'button', function () {
     if (class_name == 'btn btn-info') {
         // EDIT button
         $('#title').val(data['title']);
+        $('#parent').val(data['parent']);
         $('#description').val(data['description']);
+        $('#slug').val(data['slug']);        
         $('#type').val('edit');
         $('#modal_title').text('EDIT');
         $("#myModal").modal();
@@ -81,7 +85,9 @@ $('#confirm').on('click', '#delete', function (e) {
 
 $('#new').on('click', function (e) {
     $('#title').val('');
+    $('#parent').val('');
     $('#description').val('');
+    $('#slug').val('');    
     $('#type').val('new');
     $('#modal_title').text('NEW');
     $("#myModal").modal();

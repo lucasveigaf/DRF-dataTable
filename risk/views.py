@@ -1,6 +1,6 @@
-from risk.models import Risk, Hazard
-from risk.models import query_risk_by_args, query_hazard_by_args
-from risk.serializers import RiskSerializer, HazardSerializer
+from risk.models import Risk #, Hazard
+from risk.models import query_risk_by_args #, query_hazard_by_args
+from risk.serializers import RiskSerializer #, HazardSerializer
 
 from rest_framework import viewsets, status
 from rest_framework.response import Response
@@ -8,44 +8,33 @@ from rest_framework.response import Response
 from django.template.response import TemplateResponse
 from django.http.response import HttpResponse
 
-
-def hazards(request):
-    html = TemplateResponse(request, 'hazard.html')
-    return HttpResponse(html.render())
+from django.shortcuts import get_object_or_404, render, redirect
 
 
-class HazardViewSet(viewsets.ModelViewSet):
-    queryset = Hazard.objects.all()
-    serializer_class = HazardSerializer
+#Breadcrumbs - Risk (Used by django-mptt-urls) ----------------------------------------------------
 
-    def list(self, request, **kwargs):
-        try:
-            hazard = query_hazard_by_args(**request.query_params)
-            serializer = HazardSerializer(hazard['items'], many=True)
-            result = dict()
-            result['data'] = serializer.data
-            result['draw'] = hazard['draw']
-            result['recordsTotal'] = hazard['total']
-            result['recordsFiltered'] = hazard['count']
-            return Response(result, status=status.HTTP_200_OK, template_name=None, content_type=None)
+def risk(request, path, instance, extra):
+    return render(
+        request,
+        'risk/risk.html',
 
-        except Exception as e:
-            return Response(e, status=status.HTTP_404_NOT_FOUND, template_name=None, content_type=None)
+        {
+            'instance': instance,
+            'children': instance.get_children() if instance else Risk.objects.root_nodes(),
+            'extra': extra,
+        }
+    )
 
 
 
-
-
-
-
-
-
-
+# Risk datatable--------------------------
 
 def risks(request):
-    html = TemplateResponse(request, 'risk.html')
+    html = TemplateResponse(request, 'risks.html')
     return HttpResponse(html.render())
 
+
+# Risk view sets for API and Datatable----------------------------
 
 class RiskViewSet(viewsets.ModelViewSet):
     queryset = Risk.objects.all()
@@ -64,15 +53,3 @@ class RiskViewSet(viewsets.ModelViewSet):
 
         except Exception as e:
             return Response(e, status=status.HTTP_404_NOT_FOUND, template_name=None, content_type=None)
-
-            # [Get] api/risk/
-            # def list(self, request, **kwargs):
-            #     try:
-            #         risk = Risk.objects.all()[0:50000]
-            #         serializer = RiskSerializer(risk, many=True)
-            #
-            #         return Response(serializer.data, status=status.HTTP_200_OK, template_name=None, content_type=None)
-            #
-            #     except Exception as e:
-            #         return Response(e.message, status=status.HTTP_404_NOT_FOUND, template_name=None, content_type=None)
-            #

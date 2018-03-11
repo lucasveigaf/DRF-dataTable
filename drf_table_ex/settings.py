@@ -40,7 +40,13 @@ INSTALLED_APPS = [
     'risk',
     'mptt',
     'django_mptt_admin',
+#    'corsheaders',         #token problem with datatable CRUD
 ]
+
+#CORS_ORIGIN_WHITELIST = ( 'localhost:8080', )  #token problem with datatable CRUD
+
+#If problems with CRUD, try using icognito window !
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

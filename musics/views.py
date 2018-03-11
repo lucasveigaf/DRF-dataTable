@@ -10,7 +10,7 @@ from musics.models import query_musics_by_args
 
 
 def musics(request):
-    html = TemplateResponse(request, 'music.html')
+    html = TemplateResponse(request, 'musics.html')
     return HttpResponse(html.render())
 
 

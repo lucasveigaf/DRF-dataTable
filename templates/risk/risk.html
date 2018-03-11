@@ -1,31 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
-    <title>Django-DRF Demo</title>
+    <title>Risks</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}" type="text/css"/>
     <link rel="stylesheet" href="{% static 'stylesheets/jquery.dataTables.css' %}" type="text/css"/>
 </head>
-<body>
-<div class="container">
-    <div class="jumbotron">
-        <h1>Music</h1>
-        <p>Test</p>
-    </div>
 
-    <!-- New  button -->
+
+<div class="container">
+
+<!-- Start of Breadcrumbs -->
+
+<br>
+<br>
+        Risks
+        {% for ancestor in instance.get_ancestors %}
+            > <a href="{{ ancestor.get_absolute_url }}">{{ ancestor.title }}</a>
+        {% endfor %}
+        > <strong>{{ instance.title }}</strong>
+
+        <ul>
+            {% for child in children %}
+                <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a> </li>
+            {% empty %}
+                <li>No more subcategories</li>
+            {% endfor %}
+        </ul>
+
+<!-- End of Breadcrumbs -->
+
+
+<hr>
+
+
+    <!-- Start of New  button -->
     <div class="text-center">
         <button type="button" data-dismiss="modal" class="btn btn-primary" id="new">New</button>
     </div>
+    <!-- End of New  button -->
 
-    <!-- datatables -->
+
+    <!-- Start of Datatables -->
     <table id="datatables" class="table table-hover">
         <thead>
         <tr>
             <th>id</th>
-            <th>song</th>
-            <th>singer</th>
+            <th>title</th>
+            <th>parent</th>            
+            <th>description</th>  
+            <th>slug</th>          
             <th>last_modify_date</th>
             <th>created</th>
             <th>action</th>
@@ -37,9 +62,10 @@
         </tr>
         </tfoot>
     </table>
+    <!-- End of Datatables -->
 
 
-    <!-- NEW and EDIT Modal -->
+    <!-- Start of NEW and EDIT Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -49,16 +75,31 @@
                 </div>
                 <div class="modal-body">
                     <form role="form">
+
                         <div class="form-group">
-                            <label for="song"><span class="glyphicon glyphicon-pencil"></span> Song</label>
-                            <input type="text" class="form-control" id="song" name="song" placeholder="Enter Song"
+                            <label for="title"><span class="glyphicon glyphicon-pencil"></span> Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
                                    required="true">
                         </div>
+
                         <div class="form-group">
-                            <label for="singer"><span class="glyphicon glyphicon-file"></span> Singer</label>
-                            <input type="text" class="form-control" id="singer" name="singer"
-                                   placeholder="Enter Singer" required="true">
+                            <label for="parent"><span class="glyphicon glyphicon-file"></span> parent</label>
+                            <input type="text" class="form-control" id="parent" name="parent"
+                                   placeholder="Enter parent" required="true">
                         </div>
+
+                        <div class="form-group">
+                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
+                            <input type="text" class="form-control" id="description" name="description"
+                                   placeholder="Enter Description" required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slug"><span class="glyphicon glyphicon-file"></span> slug</label>
+                            <input type="text" class="form-control" id="slug" name="slug"
+                                   placeholder="Enter slug" required="true">
+                        </div>
+
                         <input type="hidden" id="type" name="type" value="">
                         <button type="submit" class="btn btn-success btn-block"><span
                                 class="glyphicon glyphicon-ok"></span> OK
@@ -68,8 +109,11 @@
             </div>
         </div>
     </div>
+    <!-- End of NEW and EDIT Modal -->
 
-    <!-- Delete Modal -->
+
+
+    <!-- Start of Delete Modal -->
     <div class="modal fade" id="confirm" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -84,12 +128,28 @@
             </div>
         </div>
     </div>
+    <!-- End of Delete Modal -->
+
+
+
 </div>
+
+
+
+
+
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/jquery.dataTables.js' %}"></script>
 
 <!-- Call to custom js for datatable -->
-<script src="{% static 'js/datatable_music.js' %}"></script>
-</body>
-</html>
+<script src="{% static 'js/datatable_risk.js' %}"></script>
+
+
+
+
+
+</div> 
+
+
+
