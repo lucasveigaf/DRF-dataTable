@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title> Django REST MPTT Serializing examples </title>
+
+</head>
+<body>    
+  
+<div class="container">
+
+
+    <br>
+    <br>
+    REST API:
+    <br> 
+    <a href="/api/">API</a>
+    <br> 
+    <a href="/api/risk/1">API PUT</a>
+    <br> 
+    <a href="/">Nested-serialize-recursive</a>
+    <br> 
+    <br>
+    Datatables:
+    <br> 
+    <a href="/musics/">Music</a> 
+    <br>
+    <a href="/risks/">Risks</a> 
+    <br>    
+    <a href="/hazards/">Hazards (mptt)</a> 
+    <br> 
+    <br> 
+    Breadcrumbs:
+    <br> 
+    <a href="/risk/allrisks/mammals/felines/cats/">Example 1</a>
+    <br> 
+    <br>How to dynamically filter the datatable and display only the last object of the breadcrumb ?
+    <br> 
+    <br>
+    (Bootstrap?) Trees:
+    <br>
+    <a href="/risk/list">Risks</a>
+    <br> 
+    <a href="/responses_list">Responses</a>
+    <br>        
+    <br> 
+    Admin:
+    <br>
+    <a href="/admin/risk/">Admin</a>
+    <br>
+    <br>
+    CRUD:
+    <br>
+    <a href="/risk/create/">Create</a>
+    <br>
+    <a href="/risk/2/">Read #2 </a>
+    <br>
+    <a href="/risk/2/update/">Update#2 (bug)</a>
+    <br>
+    <a href="/risk/10/delete/">Delete #10</a>
+    <br>
+    <a href="/risk/5/move/">Move #5</a>
+    <br>
+
+
+
+    <br> 
+
+
+</div>
+
+
+</body>
+</html>
+
+{% endblock %}
+

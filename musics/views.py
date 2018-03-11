@@ -9,8 +9,8 @@ from django.http.response import HttpResponse
 from musics.models import query_musics_by_args
 
 
-def index(request):
-    html = TemplateResponse(request, 'index.html')
+def musics(request):
+    html = TemplateResponse(request, 'music.html')
     return HttpResponse(html.render())
 
 

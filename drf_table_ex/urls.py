@@ -3,9 +3,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 
-from musics.views import MusicViewSet, index
+from musics.views import MusicViewSet, musics
 from risk.views import RiskViewSet, risks
 from risk.views import HazardViewSet, hazards
+
+from django.views.generic import TemplateView
 
 router = DefaultRouter()
 router.register(r'music', MusicViewSet)
@@ -14,7 +16,8 @@ router.register(r'hazard', HazardViewSet)
 
 
 urlpatterns = [
-    url(r'^index/', index),
+    url(r'^$', TemplateView.as_view(template_name='home.html')),
+    url(r'^musics/', musics),
     url(r'^risks/', risks),
     url(r'^hazards/', hazards),    
     url(r'^admin/', admin.site.urls),

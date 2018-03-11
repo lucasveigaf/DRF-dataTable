@@ -43,7 +43,7 @@ class HazardViewSet(viewsets.ModelViewSet):
 
 
 def risks(request):
-    html = TemplateResponse(request, 'index2.html')
+    html = TemplateResponse(request, 'risk.html')
     return HttpResponse(html.render())
 
 

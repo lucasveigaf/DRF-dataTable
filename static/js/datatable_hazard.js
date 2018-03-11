@@ -1,6 +1,6 @@
 let table = $('#datatables').DataTable({
-    "processing": true,
-    "serverSide": true,
+    "processing": true,    //comment out to cancel server side
+    "serverSide": true,    //comment out to cancel server side
     "ajax": {
         "url": "/api/hazard/",
         "type": "GET"
@@ -8,6 +8,7 @@ let table = $('#datatables').DataTable({
     "columns": [
         {"data": "id"},
         {"data": "title"},
+        {"data": "parent"},
         {"data": "description"},
         {"data": "slug"},        
         {"data": "last_modify_date"},
