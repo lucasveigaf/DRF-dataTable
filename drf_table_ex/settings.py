@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'musics',
     'risk',
+    'mptt',
+    'django_mptt_admin',
 ]
 
 MIDDLEWARE = [

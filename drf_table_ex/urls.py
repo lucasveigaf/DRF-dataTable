@@ -5,14 +5,18 @@ from rest_framework.routers import DefaultRouter
 
 from musics.views import MusicViewSet, index
 from risk.views import RiskViewSet, risks
+from risk.views import HazardViewSet, hazards
 
 router = DefaultRouter()
 router.register(r'music', MusicViewSet)
 router.register(r'risk', RiskViewSet)
+router.register(r'hazard', HazardViewSet)
+
 
 urlpatterns = [
     url(r'^index/', index),
     url(r'^risks/', risks),
+    url(r'^hazards/', hazards),    
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls))
 ]

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hazards</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'stylesheets/jquery.dataTables.css' %}" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hazards</h1>
+        <p>REST API CRUD</p>
+    </div>
+
+    <!-- New  button -->
+    <div class="text-center">
+        <button type="button" data-dismiss="modal" class="btn btn-primary" id="new">New</button>
+    </div>
+
+    <!-- datatables -->
+    <table id="datatables" class="table table-hover">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>description</th>  
+            <th>slug</th>          
+            <th>last_modify_date</th>
+            <th>created</th>
+            <th>action</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+
+        </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- NEW and EDIT Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal_title"></h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label for="title"><span class="glyphicon glyphicon-pencil"></span> Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
+                                   required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parent"><span class="glyphicon glyphicon-file"></span> parent</label>
+                            <input type="text" class="form-control" id="parent" name="parent"
+                                   placeholder="Enter parent" required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
+                            <input type="text" class="form-control" id="description" name="description"
+                                   placeholder="Enter Description" required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slug"><span class="glyphicon glyphicon-file"></span> slug</label>
+                            <input type="text" class="form-control" id="slug" name="slug"
+                                   placeholder="Enter slug" required="true">
+                        </div>
+
+                        <input type="hidden" id="type" name="type" value="">
+                        <button type="submit" class="btn btn-success btn-block"><span
+                                class="glyphicon glyphicon-ok"></span> OK
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="confirm" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure?</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" id="delete">Delete</button>
+                    <button type="button" data-dismiss="modal" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.dataTables.js' %}"></script>
+
+<!-- Call to custom js for datatable -->
+<script src="{% static 'js/datatable_hazard.js' %}"></script>
+</body>
+</html>
