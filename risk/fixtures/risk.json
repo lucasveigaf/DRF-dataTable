@@ -1,0 +1,338 @@
+[
+{
+    "model": "risk.risk",
+    "pk": 1,
+    "fields": {
+        "title": "Root",
+        "parent": null,
+        "description": "root",
+        "slug": "root",
+        "last_modify_date": "2018-03-11T16:13:39.177Z",
+        "created": "2018-03-11T16:13:39.177Z",
+        "lft": 1,
+        "rght": 42,
+        "tree_id": 1,
+        "level": 0
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 2,
+    "fields": {
+        "title": "Mammals",
+        "parent": 1,
+        "description": "mammals",
+        "slug": "mammals",
+        "last_modify_date": "2018-03-11T17:15:44.177Z",
+        "created": "2018-03-11T16:13:51.562Z",
+        "lft": 2,
+        "rght": 27,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 3,
+    "fields": {
+        "title": "Reptiles",
+        "parent": 1,
+        "description": "reptiles",
+        "slug": "reptiles",
+        "last_modify_date": "2018-03-11T17:16:04.299Z",
+        "created": "2018-03-11T16:14:03.564Z",
+        "lft": 28,
+        "rght": 33,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 7,
+    "fields": {
+        "title": "Felines",
+        "parent": 2,
+        "description": "felines",
+        "slug": "felines",
+        "last_modify_date": "2018-03-11T17:16:40.337Z",
+        "created": "2018-03-11T17:09:01.779Z",
+        "lft": 3,
+        "rght": 12,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 8,
+    "fields": {
+        "title": "Canines",
+        "parent": 2,
+        "description": "canines",
+        "slug": "canines",
+        "last_modify_date": "2018-03-11T17:17:04.534Z",
+        "created": "2018-03-11T17:17:04.534Z",
+        "lft": 13,
+        "rght": 20,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 9,
+    "fields": {
+        "title": "Snakes",
+        "parent": 3,
+        "description": "snakes",
+        "slug": "snakes",
+        "last_modify_date": "2018-03-11T17:17:33.605Z",
+        "created": "2018-03-11T17:17:33.605Z",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 10,
+    "fields": {
+        "title": "Turtles",
+        "parent": 3,
+        "description": "turtles",
+        "slug": "turtles",
+        "last_modify_date": "2018-03-11T17:18:00.398Z",
+        "created": "2018-03-11T17:18:00.399Z",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 11,
+    "fields": {
+        "title": "Cats",
+        "parent": 7,
+        "description": "cats",
+        "slug": "cats",
+        "last_modify_date": "2018-03-11T17:21:18.356Z",
+        "created": "2018-03-11T17:21:18.357Z",
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 12,
+    "fields": {
+        "title": "Tigers",
+        "parent": 7,
+        "description": "tigers",
+        "slug": "tigers",
+        "last_modify_date": "2018-03-11T17:21:40.021Z",
+        "created": "2018-03-11T17:21:40.021Z",
+        "lft": 6,
+        "rght": 7,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 13,
+    "fields": {
+        "title": "Lions",
+        "parent": 7,
+        "description": "lions",
+        "slug": "lions",
+        "last_modify_date": "2018-03-11T17:21:53.931Z",
+        "created": "2018-03-11T17:21:53.931Z",
+        "lft": 8,
+        "rght": 9,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 14,
+    "fields": {
+        "title": "Pumas",
+        "parent": 7,
+        "description": "pumas",
+        "slug": "pumas",
+        "last_modify_date": "2018-03-11T17:22:08.459Z",
+        "created": "2018-03-11T17:22:08.459Z",
+        "lft": 10,
+        "rght": 11,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 15,
+    "fields": {
+        "title": "Dogs",
+        "parent": 8,
+        "description": "dogs",
+        "slug": "dogs",
+        "last_modify_date": "2018-03-11T17:22:34.658Z",
+        "created": "2018-03-11T17:22:34.658Z",
+        "lft": 14,
+        "rght": 15,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 16,
+    "fields": {
+        "title": "Wolves",
+        "parent": 8,
+        "description": "wolves",
+        "slug": "wolves",
+        "last_modify_date": "2018-03-11T17:22:50.255Z",
+        "created": "2018-03-11T17:22:50.255Z",
+        "lft": 16,
+        "rght": 17,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 17,
+    "fields": {
+        "title": "Hyenas",
+        "parent": 8,
+        "description": "hyenas",
+        "slug": "hyenas",
+        "last_modify_date": "2018-03-11T17:23:06.045Z",
+        "created": "2018-03-11T17:23:06.046Z",
+        "lft": 18,
+        "rght": 19,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 22,
+    "fields": {
+        "title": "Monkeys",
+        "parent": 2,
+        "description": "monkeys",
+        "slug": "monkeys",
+        "last_modify_date": "2018-03-11T17:28:24.486Z",
+        "created": "2018-03-11T17:28:24.486Z",
+        "lft": 21,
+        "rght": 26,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 23,
+    "fields": {
+        "title": "Insects",
+        "parent": 1,
+        "description": "insects",
+        "slug": "insects",
+        "last_modify_date": "2018-03-11T17:30:13.761Z",
+        "created": "2018-03-11T17:30:13.761Z",
+        "lft": 34,
+        "rght": 41,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 24,
+    "fields": {
+        "title": "Ants",
+        "parent": 23,
+        "description": "ants",
+        "slug": "ants",
+        "last_modify_date": "2018-03-11T17:30:47.372Z",
+        "created": "2018-03-11T17:30:47.372Z",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 25,
+    "fields": {
+        "title": "Bees",
+        "parent": 23,
+        "description": "bees",
+        "slug": "bees",
+        "last_modify_date": "2018-03-11T17:30:57.855Z",
+        "created": "2018-03-11T17:30:57.855Z",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 26,
+    "fields": {
+        "title": "Wasps",
+        "parent": 23,
+        "description": "wasps",
+        "slug": "wasps",
+        "last_modify_date": "2018-03-11T17:31:11.032Z",
+        "created": "2018-03-11T17:31:11.032Z",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 27,
+    "fields": {
+        "title": "Chimpanzee",
+        "parent": 22,
+        "description": "chimpanzee",
+        "slug": "chimpanzee",
+        "last_modify_date": "2018-03-12T07:24:22.095Z",
+        "created": "2018-03-12T07:24:22.095Z",
+        "lft": 22,
+        "rght": 23,
+        "tree_id": 1,
+        "level": 3
+    }
+},
+{
+    "model": "risk.risk",
+    "pk": 28,
+    "fields": {
+        "title": "Gorilla",
+        "parent": 22,
+        "description": "gorilla",
+        "slug": "gorilla",
+        "last_modify_date": "2018-03-12T07:24:47.152Z",
+        "created": "2018-03-12T07:24:47.152Z",
+        "lft": 24,
+        "rght": 25,
+        "tree_id": 1,
+        "level": 3
+    }
+}
+]
