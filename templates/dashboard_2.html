@@ -12,26 +12,6 @@
 
 <div class="container">
 
-<!-- Start of Breadcrumbs (based on mptt tree-->
-
-<br>
-<br>
-        Risk tree
-        {% for ancestor in instance.get_ancestors %}
-            > <a href="{{ ancestor.get_absolute_url }}">{{ ancestor.title }}</a>
-        {% endfor %}
-        > <strong>{{ instance.title }}</strong>
-
-        <ul>
-            {% for child in children %}
-                <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a> </li>
-            {% empty %}
-                <li>No more subcategories</li>
-            {% endfor %}
-        </ul>
-
-<!-- End of Breadcrumbs -->
-
 
 <hr>
 

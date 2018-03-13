@@ -11,7 +11,7 @@ from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
 
 
-#Template with risk breadcrumbs(django-mptt-urls) and risk datatable----------------------------------------------------
+# Risk breadcrumbs(django-mptt-urls) template and risk datatable----------------------------------------------------
 
 def risk(request, path, instance, extra):
     return render(
@@ -25,8 +25,8 @@ def risk(request, path, instance, extra):
         }
     )
 
-#Template with risk breadcrumbs(django-mptt-urls) and response datatable----------------------------------------------------
-
+# Risk breadcrumbs(django-mptt-urls) template and response datatable----------------------------------------------------
+"""
 def risk2(request, path, instance, extra):
     return render(
         request,
@@ -38,7 +38,7 @@ def risk2(request, path, instance, extra):
             'extra': extra,
         }
     )
-
+"""
 
 
 
@@ -50,13 +50,14 @@ def risks(request):
     html = TemplateResponse(request, 'risks.html')
     return HttpResponse(html.render())
 
+""" 
 
 # Dashboard page--------------------------
 
-def dashboard(request):
-    html = TemplateDashboard(request, 'dashboard.html')
+def dashboard_2(request):
+    html = TemplateResponse(request, 'dashboard_2.html')
     return HttpResponse(html.render())
-"""
+
 
 
 # Risk view sets for API and Datatable----------------------------

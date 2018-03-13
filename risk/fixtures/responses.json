@@ -1,0 +1,38 @@
+[
+{
+    "model": "risk.responses",
+    "pk": 1,
+    "fields": {
+        "risk": 13,
+        "responsesCategory": "ACC",
+        "description": "Accept risk from lions",
+        "last_modify_date": "2018-03-13T07:19:23.405Z",
+        "created": "2018-03-13T04:42:45.391Z",
+        "deadlineDate": "2018-03-13"
+    }
+},
+{
+    "model": "risk.responses",
+    "pk": 2,
+    "fields": {
+        "risk": 16,
+        "responsesCategory": "MIT",
+        "description": "Mitigate risk from wolves",
+        "last_modify_date": "2018-03-13T07:37:20.659Z",
+        "created": "2018-03-13T04:43:03.506Z",
+        "deadlineDate": "2018-03-13"
+    }
+},
+{
+    "model": "risk.responses",
+    "pk": 3,
+    "fields": {
+        "risk": 11,
+        "responsesCategory": "HED",
+        "description": "Hedge risk from cats",
+        "last_modify_date": "2018-03-13T07:37:30.690Z",
+        "created": "2018-03-13T07:36:28.012Z",
+        "deadlineDate": "2018-03-13"
+    }
+}
+]
