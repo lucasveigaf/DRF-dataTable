@@ -16,7 +16,7 @@ from django.shortcuts import get_object_or_404, render, redirect
 def risk(request, path, instance, extra):
     return render(
         request,
-        'risk/risk.html',
+        'risk/dashboard_1.html',
 
         {
             'instance': instance,
@@ -25,34 +25,8 @@ def risk(request, path, instance, extra):
         }
     )
 
-# Risk breadcrumbs(django-mptt-urls) template and response datatable----------------------------------------------------
-"""
-def risk2(request, path, instance, extra):
-    return render(
-        request,
-        'risk/risk2.html',
 
-        {
-            'instance': instance,
-            'children': instance.get_children() if instance else Risk.objects.root_nodes(),
-            'extra': extra,
-        }
-    )
-"""
-
-
-
-
-"""
-# Risk page--------------------------
-
-def risks(request):
-    html = TemplateResponse(request, 'risks.html')
-    return HttpResponse(html.render())
-
-""" 
-
-# Dashboard page--------------------------
+# Responses page (careful 'Response' is a reserved term !) --------------------------
 
 def dashboard_2(request):
     html = TemplateResponse(request, 'dashboard_2.html')

@@ -23,8 +23,6 @@ urlpatterns = [
     #The following injects the slug (path) into the url for the breadcrumbs
     url(r'^risk/(?P<path>.*)', mptt_urls.view(model='risk.models.Risk', view='risk.views.risk', slug_field='slug'), {'extra': ''}, name='risk'),
 
-#    url(r'^risk2/(?P<path>.*)', mptt_urls.view(model='risk.models.Risk', view='risk.views.risk2', slug_field='slug'), {'extra': ''}, name='risk2'),
-
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
     url(r'^dashboard_2/', dashboard_2),
