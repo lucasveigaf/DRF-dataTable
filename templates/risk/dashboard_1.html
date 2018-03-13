@@ -34,6 +34,10 @@
 
 <hr>
 
+Risks
+
+
+<!-- RISK Datatable  -->
 
     <!-- Start of New  button -->
     <div class="text-center">
@@ -42,7 +46,7 @@
     <!-- End of New  button -->
 
 
-    <!-- Start of Datatables -->
+    <!-- Start of RISK Datatables -->
     <table id="datatables" class="table table-hover">
         <thead>
         <tr>
@@ -130,6 +134,105 @@
     </div>
     <!-- End of Modal (DELETE) -->
 
+<br>
+<br>
+<br>
+
+<hr>
+
+
+Responses
+
+<!-- RESPONSE Datatable  -->
+
+    <!-- Start of New  button -->
+    <div class="text-center">
+        <button type="button" data-dismiss="modal" class="btn btn-primary" id="new">New</button>
+    </div>
+    <!-- End of New  button -->
+
+
+    <!-- Start of Datatables -->
+    <table id="datatables2" class="table table-hover">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Risk</th>
+            <th>Response</th>           
+            <th>Description</th>          
+            <th>Modified</th>
+            <th>Created</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+
+        </tr>
+        </tfoot>
+    </table>
+    <!-- End of Datatables -->
+
+
+    <!-- Start of Modal (NEW and EDIT) -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal_title"></h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label for="risk"><span class="glyphicon glyphicon-pencil"></span> Risk</label>
+                            <input type="text" class="form-control" id="risk" name="risk" placeholder="Enter Risk"
+                                   required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="responsesCategory"><span class="glyphicon glyphicon-file"></span> responsesCategory</label>
+                            <input type="text" class="form-control" id="responsesCategory" name="responsesCategory"
+                                   placeholder="Enter responsesCategory" required="false">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
+                            <input type="text" class="form-control" id="description" name="description"
+                                   placeholder="Enter Description" required="true">
+                        </div>
+
+                        <input type="hidden" id="type" name="type" value="">
+                        <button type="submit" class="btn btn-success btn-block"><span
+                                class="glyphicon glyphicon-ok"></span> OK
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal (NEW and EDIT) -->
+
+
+
+    <!-- Start of Modal (DELETE) -->
+    <div class="modal fade" id="confirm" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure?</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" id="delete">Delete</button>
+                    <button type="button" data-dismiss="modal" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal (DELETE) -->
+
 
 </div>
 
@@ -140,10 +243,8 @@
 
 <!-- Call to datatable (only one datatable at a time ?)-->
 <script src="{% static 'js/datatable_risk.js' %}"></script>
-
-<!-- 
 <script src="{% static 'js/datatable_responses.js' %}"></script>
--->
+
 
 </div> 
 

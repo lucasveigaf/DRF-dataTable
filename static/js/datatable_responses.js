@@ -1,4 +1,4 @@
-let table = $('#datatables').DataTable({
+let table2 = $('#datatables2').DataTable({
     "processing": true,    //comment out to cancel server side
     "serverSide": true,    //comment out to cancel server side
     "ajax": {
@@ -12,6 +12,7 @@ let table = $('#datatables').DataTable({
         {"data": "description"},        
         {"data": "last_modify_date"},
         {"data": "created"},
+
         {
             "data": null,
             "defaultContent": '<button type="button" class="btn btn-info">Edit</button>' + '&nbsp;&nbsp' +
@@ -22,8 +23,8 @@ let table = $('#datatables').DataTable({
 
 let id = 0;
 
-$('#datatables tbody').on('click', 'button', function () {
-    let data = table.row($(this).parents('tr')).data();
+$('#datatables2 tbody').on('click', 'button', function () {
+    let data = table2.row($(this).parents('tr')).data();
     let class_name = $(this).attr('class');
     if (class_name == 'btn btn-info') {
         // EDIT button
@@ -89,6 +90,7 @@ $('#new').on('click', function (e) {
     $('#type').val('new');
     $('#modal_title').text('NEW');
     $("#myModal").modal();
+
 });
 
 
