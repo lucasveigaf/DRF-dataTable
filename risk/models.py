@@ -11,7 +11,6 @@ from mptt.models import MPTTModel, TreeForeignKey
 
 # Risk (mptt) ----------------------------------------
 
-
 class Risk(MPTTModel):
     title             = models.CharField('Risk category name', max_length=200)
     parent            = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='riskcategories', on_delete=models.CASCADE)
@@ -36,7 +35,7 @@ ORDER_COLUMN_CHOICES = Choices(
     ('1', 'title'),
     ('2', 'last_modify_date'),
     ('3', 'created'),
-)
+    )
 
 # Risk datatable
 def query_risk_by_args(**kwargs):                
@@ -69,3 +68,63 @@ def query_risk_by_args(**kwargs):
         'total': total,
         'draw': draw
     }
+
+
+#  Responses --------------------------------------------
+
+RESPONSES_CATEGORY = (  
+    ('ACC', 'Accept'),    
+    ('MIT', 'Mitigate'),
+    ('INS', 'Insure'),
+    ('HED', 'Hedge'),
+)
+
+class Responses(models.Model):    #Note, 'Response' is a reserved term
+    risk               = TreeForeignKey('Risk', null=True, blank=True, db_index=True, on_delete=models.CASCADE)
+    responsesCategory  = models.CharField('Responses category',max_length=3, choices=RESPONSES_CATEGORY, default="ACC")
+    description        = models.TextField('Description',max_length=300, default="Detailed description")
+    last_modify_date   = models.DateTimeField(auto_now=True, null=True)     # setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
+    created            = models.DateTimeField(auto_now_add=True, null=True)
+    deadlineDate       = models.DateField(auto_now_add=True, null=True)    
+
+  
+    def __str__(self):        
+        return self.description
+
+    class Meta:
+        verbose_name_plural = 'Responses'
+
+
+# Responses datatable
+def query_responses_by_args(**kwargs):                
+    draw = int(kwargs.get('draw', None)[0])
+    length = int(kwargs.get('length', None)[0])
+    start = int(kwargs.get('start', None)[0])
+    search_value = kwargs.get('search[value]', None)[0]
+    order_column = kwargs.get('order[0][column]', None)[0]
+    order = kwargs.get('order[0][dir]', None)[0]
+
+    order_column = ORDER_COLUMN_CHOICES[order_column]
+    # django orm '-' -> desc
+    if order == 'desc':
+        order_column = '-' + order_column
+
+    queryset = Responses.objects.all()      #modify the queryset here
+    total = queryset.count()
+
+    if search_value:
+        queryset = queryset.filter(Q(id__icontains=search_value) |
+                                    #    Q(title__icontains=search_value) |
+                                        Q(last_modify_date__icontains=search_value) |
+                                        Q(created__icontains=search_value))
+
+    count = queryset.count()
+    queryset = queryset.order_by(order_column)[start:start + length]
+    return {
+        'items': queryset,
+        'count': count,
+        'total': total,
+        'draw': draw
+    }
+
+

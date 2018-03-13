@@ -4,19 +4,20 @@ from django_mptt_admin.admin import DjangoMpttAdmin
 #from mptt.admin import DraggableMPTTAdmin
 
 
-from risk.models import Risk#, Hazard
+from risk.models import Risk, Responses
 
 
 
-"""
-class RiskAdmin(admin.ModelAdmin):
-    pass
-
-admin.site.register(Risk, RiskAdmin)
-"""
 
 class RiskAdmin(DjangoMpttAdmin):
     pass
     
 admin.site.register(Risk, RiskAdmin)
+
+
+
+class ResponsesAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Responses, ResponsesAdmin)
 
