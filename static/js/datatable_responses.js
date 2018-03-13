@@ -2,15 +2,13 @@ let table = $('#datatables').DataTable({
     "processing": true,    //comment out to cancel server side
     "serverSide": true,    //comment out to cancel server side
     "ajax": {
-        "url": "/api/risk/",
+        "url": "/api/responses/",
         "type": "GET"
     },
     "columns": [
         {"data": "id"},
-        {"data": "title"},
-        {"data": "parent"},
-        {"data": "description"},
-        {"data": "slug"},        
+        {"data": "responsesCategory"},
+        {"data": "description"},        
         {"data": "last_modify_date"},
         {"data": "created"},
         {
@@ -50,7 +48,7 @@ $('form').on('submit', function (e) {
     let $this = $(this);
     let type = $('#type').val();
     let method = '';
-    let url = '/api/risk/';
+    let url = '/api/responses/';
     if (type == 'new') {
         // new
         method = 'POST';
@@ -73,7 +71,7 @@ $('form').on('submit', function (e) {
 
 $('#confirm').on('click', '#delete', function (e) {
     $.ajax({
-        url: '/api/risk/' + id + '/',
+        url: '/api/responses/' + id + '/',
         method: 'DELETE'
     }).success(function (data, textStatus, jqXHR) {
         location.reload();
@@ -84,10 +82,8 @@ $('#confirm').on('click', '#delete', function (e) {
 
 
 $('#new').on('click', function (e) {
-    $('#title').val('');
-    $('#parent').val('');
-    $('#description').val('');
-    $('#slug').val('');    
+    $('#responsesCategory').val('');
+    $('#description').val('');  
     $('#type').val('new');
     $('#modal_title').text('NEW');
     $("#myModal").modal();

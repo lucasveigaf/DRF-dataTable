@@ -5,7 +5,6 @@ from risk.models import Risk
 from risk.models import Responses
 
 
-
 class RiskSerializer(serializers.ModelSerializer):
     # If your <field_name> is declared on your serializer with the parameter required=False
     # then this validation step will not take place if the field is not included.
@@ -17,8 +16,6 @@ class RiskSerializer(serializers.ModelSerializer):
         model = Risk
         # fields = '__all__'
         fields = ('id', 'title', 'parent', 'description', 'slug', 'last_modify_date', 'created')
-
-
 
 
 class ResponsesSerializer(serializers.ModelSerializer):

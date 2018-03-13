@@ -11,7 +11,7 @@ from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
 
 
-#Breadcrumbs - Risk (Used by django-mptt-urls) ----------------------------------------------------
+#Template with risk breadcrumbs(django-mptt-urls) and risk datatable----------------------------------------------------
 
 def risk(request, path, instance, extra):
     return render(
@@ -24,6 +24,24 @@ def risk(request, path, instance, extra):
             'extra': extra,
         }
     )
+
+
+#Template with risk breadcrumbs(django-mptt-urls) and responses datatable----------------------------------------------------
+
+def responses(request, path, instance, extra):
+    return render(
+        request,
+        'risk/dashboard.html',
+
+        {
+            'instance': instance,
+            'children': instance.get_children() if instance else Risk.objects.root_nodes(),
+            'extra': extra,
+        }
+    )
+
+
+
 
 """
 # Risk page--------------------------

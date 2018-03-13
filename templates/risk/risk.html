@@ -11,7 +11,7 @@
 
 <div class="container">
 
-<!-- Start of Breadcrumbs -->
+<!-- Start of Breadcrumbs (based on mptt tree-->
 
 <br>
 <br>
@@ -65,7 +65,7 @@
     <!-- End of Datatables -->
 
 
-    <!-- Start of NEW and EDIT Modal -->
+    <!-- Start of Modal (NEW and EDIT) -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -109,11 +109,11 @@
             </div>
         </div>
     </div>
-    <!-- End of NEW and EDIT Modal -->
+    <!-- End of Modal (NEW and EDIT) -->
 
 
 
-    <!-- Start of Delete Modal -->
+    <!-- Start of Modal (DELETE) -->
     <div class="modal fade" id="confirm" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -128,26 +128,22 @@
             </div>
         </div>
     </div>
-    <!-- End of Delete Modal -->
-
+    <!-- End of Modal (DELETE) -->
 
 
 </div>
-
-
-
 
 
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/jquery.dataTables.js' %}"></script>
 
-<!-- Call to custom js for datatable -->
+<!-- Call to datatable (only one datatable at a time ?)-->
 <script src="{% static 'js/datatable_risk.js' %}"></script>
 
-
-
-
+<!-- 
+<script src="{% static 'js/datatable_responses.js' %}"></script>
+-->
 
 </div> 
 

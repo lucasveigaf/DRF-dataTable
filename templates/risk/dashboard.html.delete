@@ -1,15 +1,5 @@
 
 
-<!-- 
-
-Attempt at Dashboard:
-
--Breadcrumbs are from risk mptt
--Should contain multiple datatables (Risk, Responses, Music ...)
-
--->
-
-
 <head>
     <meta charset="UTF-8">
     <title>Risks</title>
@@ -21,14 +11,7 @@ Attempt at Dashboard:
 
 <div class="container">
 
-<br>
-<br>
-Responses
-<br>
-<br>
-
-
-<!-- Start of Breadcrumbs (based on mptt tree-->
+<!-- Start of Breadcrumbs -->
 
 <br>
 <br>
@@ -153,18 +136,18 @@ Responses
 
 
 
+
+
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/jquery.dataTables.js' %}"></script>
 
-<!-- Call to datatable (only one datatable at a time ?)-->
-
-
-<script src="{% static 'js/datatable_responses.js' %}"></script>
-
-<!-- 
+<!-- Call to custom js for datatable -->
 <script src="{% static 'js/datatable_risk.js' %}"></script>
--->
+
+
+
+
 
 </div> 
 
