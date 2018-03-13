@@ -7,6 +7,7 @@ let table = $('#datatables').DataTable({
     },
     "columns": [
         {"data": "id"},
+        {"data": "risk"},        
         {"data": "responsesCategory"},
         {"data": "description"},        
         {"data": "last_modify_date"},
@@ -26,8 +27,8 @@ $('#datatables tbody').on('click', 'button', function () {
     let class_name = $(this).attr('class');
     if (class_name == 'btn btn-info') {
         // EDIT button
-        $('#title').val(data['title']);
-        $('#parent').val(data['parent']);
+        $('#risk').val(data['risk']);
+        $('#responsesCategory').val(data['responsesCategory']);
         $('#description').val(data['description']);
         $('#slug').val(data['slug']);        
         $('#type').val('edit');
@@ -82,6 +83,7 @@ $('#confirm').on('click', '#delete', function (e) {
 
 
 $('#new').on('click', function (e) {
+    $('#risk').val('');    
     $('#responsesCategory').val('');
     $('#description').val('');  
     $('#type').val('new');

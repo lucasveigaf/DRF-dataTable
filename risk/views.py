@@ -25,13 +25,12 @@ def risk(request, path, instance, extra):
         }
     )
 
+#Template with risk breadcrumbs(django-mptt-urls) and response datatable----------------------------------------------------
 
-#Template with risk breadcrumbs(django-mptt-urls) and responses datatable----------------------------------------------------
-
-def responses(request, path, instance, extra):
+def risk2(request, path, instance, extra):
     return render(
         request,
-        'risk/dashboard.html',
+        'risk/risk2.html',
 
         {
             'instance': instance,
@@ -39,6 +38,7 @@ def responses(request, path, instance, extra):
             'extra': extra,
         }
     )
+
 
 
 

@@ -1,5 +1,6 @@
 
 
+
 <head>
     <meta charset="UTF-8">
     <title>Risks</title>
@@ -11,7 +12,7 @@
 
 <div class="container">
 
-<!-- Start of Breadcrumbs -->
+<!-- Start of Breadcrumbs (based on mptt tree-->
 
 <br>
 <br>
@@ -46,14 +47,13 @@
     <table id="datatables" class="table table-hover">
         <thead>
         <tr>
-            <th>id</th>
-            <th>title</th>
-            <th>parent</th>            
-            <th>description</th>  
-            <th>slug</th>          
-            <th>last_modify_date</th>
-            <th>created</th>
-            <th>action</th>
+            <th>Id</th>
+            <th>Risk</th>
+            <th>Response</th>           
+            <th>Description</th>          
+            <th>Modified</th>
+            <th>Created</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tfoot>
@@ -65,7 +65,7 @@
     <!-- End of Datatables -->
 
 
-    <!-- Start of NEW and EDIT Modal -->
+    <!-- Start of Modal (NEW and EDIT) -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -77,27 +77,21 @@
                     <form role="form">
 
                         <div class="form-group">
-                            <label for="title"><span class="glyphicon glyphicon-pencil"></span> Title</label>
-                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
+                            <label for="risk"><span class="glyphicon glyphicon-pencil"></span> Risk</label>
+                            <input type="text" class="form-control" id="risk" name="risk" placeholder="Enter Risk"
                                    required="true">
                         </div>
 
                         <div class="form-group">
-                            <label for="parent"><span class="glyphicon glyphicon-file"></span> parent</label>
-                            <input type="text" class="form-control" id="parent" name="parent"
-                                   placeholder="Enter parent" required="false">
+                            <label for="responsesCategory"><span class="glyphicon glyphicon-file"></span> responsesCategory</label>
+                            <input type="text" class="form-control" id="responsesCategory" name="responsesCategory"
+                                   placeholder="Enter responsesCategory" required="false">
                         </div>
 
                         <div class="form-group">
                             <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
                             <input type="text" class="form-control" id="description" name="description"
                                    placeholder="Enter Description" required="true">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="slug"><span class="glyphicon glyphicon-file"></span> slug</label>
-                            <input type="text" class="form-control" id="slug" name="slug"
-                                   placeholder="Enter slug" required="true">
                         </div>
 
                         <input type="hidden" id="type" name="type" value="">
@@ -109,11 +103,11 @@
             </div>
         </div>
     </div>
-    <!-- End of NEW and EDIT Modal -->
+    <!-- End of Modal (NEW and EDIT) -->
 
 
 
-    <!-- Start of Delete Modal -->
+    <!-- Start of Modal (DELETE) -->
     <div class="modal fade" id="confirm" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -128,26 +122,18 @@
             </div>
         </div>
     </div>
-    <!-- End of Delete Modal -->
-
+    <!-- End of Modal (DELETE) -->
 
 
 </div>
-
-
-
 
 
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/jquery.dataTables.js' %}"></script>
 
-<!-- Call to custom js for datatable -->
-<script src="{% static 'js/datatable_risk.js' %}"></script>
-
-
-
-
+<!-- Call to datatable (only one datatable at a time ?)-->
+<script src="{% static 'js/datatable_responses.js' %}"></script>
 
 </div> 
 
