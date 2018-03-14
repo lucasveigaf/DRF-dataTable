@@ -3,7 +3,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 
-#from musics.views import MusicViewSet, musics
+from musics.views import MusicViewSet, musics
 from risk.views import RiskViewSet, ResponsesViewSet, dashboard_2
 
 from django.views.generic import TemplateView
@@ -15,7 +15,7 @@ import mptt_urls  #for breadcrumbs
 router = DefaultRouter()
 router.register(r'risk', RiskViewSet)
 router.register(r'responses', ResponsesViewSet)
-#router.register(r'music', MusicViewSet)
+router.register(r'music', MusicViewSet)
 
 
 urlpatterns = [
@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
     url(r'^dashboard_2/', dashboard_2),
+    url(r'^musics/', musics),
 
 ]

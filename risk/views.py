@@ -34,7 +34,7 @@ def dashboard_2(request):
 
 
 
-# Risk view sets for API and Datatable----------------------------
+# Risk view sets for Datatable API----------------------------
 
 class RiskViewSet(viewsets.ModelViewSet):
     queryset = Risk.objects.all()
@@ -56,7 +56,7 @@ class RiskViewSet(viewsets.ModelViewSet):
 
 
 
-# Responses view sets for API and Datatable----------------------------
+# Responses view sets for Datatable API----------------------------
 
 class ResponsesViewSet(viewsets.ModelViewSet):
     queryset = Responses.objects.all()
