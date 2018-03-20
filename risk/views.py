@@ -31,7 +31,8 @@ class RiskViewSet(viewsets.ModelViewSet):
         result['data'] = []
         result['recordsTotal'] = 0
         try:
-            qs = Risk.objects.get(slug=kwargs['risk_slug']).get_children()
+#            qs = Risk.objects.get(slug=kwargs['risk_slug']).get_children()
+            qs = Risk.objects.get(slug=kwargs['risk_slug']).get_descendants(include_self=True)            
             if not qs: # If Risk has no children, DoesNotExist will also be thrown
                 raise Risk.DoesNotExist
 
@@ -58,6 +59,7 @@ class ResponsesViewSet(viewsets.ModelViewSet):
         result['recordsTotal'] = 0
         try:
             qs = Responses.objects.filter(risk__slug=kwargs['response_slug'])
+#            qs = Responses.objects.filter(risk__slug=kwargs['risk_slug']).get_descendants(include_self=False)            
             if not qs:
                 raise Responses.DoesNotExist
 
