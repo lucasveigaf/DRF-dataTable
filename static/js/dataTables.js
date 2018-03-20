@@ -1,13 +1,18 @@
+let riskTableAttribute = $("#datatables").attr("modelslug")
 let table = $('#datatables').DataTable({
-    "processing": true,    //comment out to cancel server side
-    "serverSide": true,    //comment out to cancel server side
+    // "processing": true,    //comment out to cancel server side
+    // "serverSide": true,    //comment out to cancel server side
     "ajax": {
-        "url": "/api/risk/",
-        "type": "GET"
+        "url": "/api/risk/" + riskTableAttribute + "/",
+        "type": "GET",
     },
     "columns": [
         {"data": "id"},
-        {"data": "title"},
+        { "data": "title",
+        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+            $(nTd).html("<a href='" + window.location.href + oData.slug + "/'>" + oData.title+ "</a>");
+            }
+        },
         {"data": "parent"},
         {"data": "description"},
         {"data": "slug"},        
@@ -20,8 +25,6 @@ let table = $('#datatables').DataTable({
         }
     ]
 });
-
-let id = 0;
 
 $('#datatables tbody').on('click', 'button', function () {
     let data = table.row($(this).parents('tr')).data();
@@ -40,9 +43,7 @@ $('#datatables tbody').on('click', 'button', function () {
         $('#modal_title').text('DELETE');
         $("#confirm").modal();
     }
-
     id = data['id'];
-
 });
 
 $('form').on('submit', function (e) {
@@ -93,4 +94,47 @@ $('#new').on('click', function (e) {
     $("#myModal").modal();
 });
 
+let responseTableAttribute = $("#datatables2").attr("modelslug")
+let responseTable = $('#datatables2').DataTable({
+    // "processing": true,    //comment out to cancel server side
+    // "serverSide": true,    //comment out to cancel server side
+    "ajax": {
+        "url": "/api/responses/" + responseTableAttribute + "/",
+        "type": "GET"
+    },
+    "columns": [
+        {"data": "id"},
+        {"data": "risk"},        
+        {"data": "responsesCategory"},
+        {"data": "description"},        
+        {"data": "last_modify_date"},
+        {"data": "created"},
 
+        {
+            "data": null,
+            "defaultContent": '<button type="button" class="btn btn-info">Edit</button>' + '&nbsp;&nbsp' +
+            '<button type="button" class="btn btn-danger">Delete</button>'
+        }
+    ]
+});
+
+$('#datatables2 tbody').on('click', 'button', function () {
+    let data = responseTable.row($(this).parents('tr')).data();
+    let class_name = $(this).attr('class');
+    if (class_name == 'btn btn-info') {
+        // EDIT button
+        $('#risk').val(data['risk']);
+        $('#responsesCategory').val(data['responsesCategory']);
+        $('#description').val(data['description']);
+        $('#slug').val(data['slug']);        
+        $('#type').val('edit');
+        $('#modal_title').text('EDIT');
+        $("#myModal").modal();
+    } else {
+        // DELETE button
+        $('#modal_title').text('DELETE');
+        $("#confirm").modal();
+    }
+    id = data['id'];
+
+});
