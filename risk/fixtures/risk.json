@@ -3,11 +3,11 @@
     "model": "risk.risk",
     "pk": 1,
     "fields": {
-        "title": "Root",
+        "title": "All Animals",
         "parent": null,
         "description": "root",
         "slug": "root",
-        "last_modify_date": "2018-03-11T16:13:39.177Z",
+        "last_modify_date": "2018-03-20T16:18:01.698Z",
         "created": "2018-03-11T16:13:39.177Z",
         "lft": 1,
         "rght": 42,

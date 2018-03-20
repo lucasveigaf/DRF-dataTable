@@ -1,0 +1,3265 @@
+[
+{
+    "model": "risk.country",
+    "pk": 2,
+    "fields": {
+        "title": "Africa",
+        "parent": 258,
+        "slug": "XB",
+        "lft": 2,
+        "rght": 119,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 4,
+    "fields": {
+        "title": "Asia",
+        "parent": 258,
+        "slug": "XD",
+        "lft": 120,
+        "rght": 231,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 5,
+    "fields": {
+        "title": "Europe",
+        "parent": 258,
+        "slug": "XE",
+        "lft": 232,
+        "rght": 333,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 6,
+    "fields": {
+        "title": "North America",
+        "parent": 258,
+        "slug": "XF",
+        "lft": 334,
+        "rght": 419,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 7,
+    "fields": {
+        "title": "Oceania",
+        "parent": 258,
+        "slug": "XG",
+        "lft": 420,
+        "rght": 471,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 8,
+    "fields": {
+        "title": "South America",
+        "parent": 258,
+        "slug": "XH",
+        "lft": 472,
+        "rght": 501,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 9,
+    "fields": {
+        "title": "Afghanistan",
+        "parent": 4,
+        "slug": "AF",
+        "lft": 121,
+        "rght": 122,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 10,
+    "fields": {
+        "title": "\u00c5land Islands",
+        "parent": 5,
+        "slug": "AX",
+        "lft": 233,
+        "rght": 234,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 11,
+    "fields": {
+        "title": "Albania",
+        "parent": 5,
+        "slug": "AL",
+        "lft": 235,
+        "rght": 236,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 12,
+    "fields": {
+        "title": "Algeria",
+        "parent": 2,
+        "slug": "DZ",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 13,
+    "fields": {
+        "title": "American Samoa",
+        "parent": 7,
+        "slug": "AS",
+        "lft": 421,
+        "rght": 422,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 14,
+    "fields": {
+        "title": "Andorra",
+        "parent": 5,
+        "slug": "AD",
+        "lft": 237,
+        "rght": 238,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 15,
+    "fields": {
+        "title": "Angola",
+        "parent": 2,
+        "slug": "AO",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 16,
+    "fields": {
+        "title": "Anguilla",
+        "parent": 6,
+        "slug": "AI",
+        "lft": 335,
+        "rght": 336,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 18,
+    "fields": {
+        "title": "Antigua and Barbuda",
+        "parent": 6,
+        "slug": "AG",
+        "lft": 337,
+        "rght": 338,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 19,
+    "fields": {
+        "title": "Argentina",
+        "parent": 8,
+        "slug": "AR",
+        "lft": 473,
+        "rght": 474,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 20,
+    "fields": {
+        "title": "Armenia",
+        "parent": 4,
+        "slug": "AM",
+        "lft": 123,
+        "rght": 124,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 21,
+    "fields": {
+        "title": "Aruba",
+        "parent": 6,
+        "slug": "AW",
+        "lft": 339,
+        "rght": 340,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 22,
+    "fields": {
+        "title": "Australia",
+        "parent": 7,
+        "slug": "AU",
+        "lft": 423,
+        "rght": 424,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 23,
+    "fields": {
+        "title": "Austria",
+        "parent": 5,
+        "slug": "AT",
+        "lft": 239,
+        "rght": 240,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 24,
+    "fields": {
+        "title": "Azerbaijan",
+        "parent": 4,
+        "slug": "AZ",
+        "lft": 125,
+        "rght": 126,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 25,
+    "fields": {
+        "title": "Bahamas",
+        "parent": 6,
+        "slug": "BS",
+        "lft": 341,
+        "rght": 342,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 26,
+    "fields": {
+        "title": "Bahrain",
+        "parent": 4,
+        "slug": "BH",
+        "lft": 127,
+        "rght": 128,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 27,
+    "fields": {
+        "title": "Bangladesh",
+        "parent": 4,
+        "slug": "BD",
+        "lft": 129,
+        "rght": 130,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 28,
+    "fields": {
+        "title": "Barbados",
+        "parent": 6,
+        "slug": "BB",
+        "lft": 343,
+        "rght": 344,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 29,
+    "fields": {
+        "title": "Belarus",
+        "parent": 5,
+        "slug": "BY",
+        "lft": 241,
+        "rght": 242,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 30,
+    "fields": {
+        "title": "Belgium",
+        "parent": 5,
+        "slug": "BE",
+        "lft": 243,
+        "rght": 244,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 31,
+    "fields": {
+        "title": "Belize",
+        "parent": 6,
+        "slug": "BZ",
+        "lft": 345,
+        "rght": 346,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 32,
+    "fields": {
+        "title": "Benin",
+        "parent": 2,
+        "slug": "BJ",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 33,
+    "fields": {
+        "title": "Bermuda",
+        "parent": 6,
+        "slug": "BM",
+        "lft": 347,
+        "rght": 348,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 34,
+    "fields": {
+        "title": "Bhutan",
+        "parent": 4,
+        "slug": "BT",
+        "lft": 131,
+        "rght": 132,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 35,
+    "fields": {
+        "title": "Bolivia, Plurinational State of",
+        "parent": 8,
+        "slug": "BO",
+        "lft": 475,
+        "rght": 476,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 36,
+    "fields": {
+        "title": "Bonaire, Sint Eustatius and Saba",
+        "parent": 6,
+        "slug": "BQ",
+        "lft": 349,
+        "rght": 350,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 37,
+    "fields": {
+        "title": "Bosnia and Herzegovina",
+        "parent": 5,
+        "slug": "BA",
+        "lft": 245,
+        "rght": 246,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 38,
+    "fields": {
+        "title": "Botswana",
+        "parent": 2,
+        "slug": "BW",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 40,
+    "fields": {
+        "title": "Brazil",
+        "parent": 8,
+        "slug": "BR",
+        "lft": 477,
+        "rght": 478,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 41,
+    "fields": {
+        "title": "British Indian Ocean Territory",
+        "parent": 4,
+        "slug": "IO",
+        "lft": 133,
+        "rght": 134,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 42,
+    "fields": {
+        "title": "Brunei Darussalam",
+        "parent": 4,
+        "slug": "BN",
+        "lft": 135,
+        "rght": 136,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 43,
+    "fields": {
+        "title": "Bulgaria",
+        "parent": 5,
+        "slug": "BG",
+        "lft": 247,
+        "rght": 248,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 44,
+    "fields": {
+        "title": "Burkina Faso",
+        "parent": 2,
+        "slug": "BF",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 45,
+    "fields": {
+        "title": "Burundi",
+        "parent": 2,
+        "slug": "BI",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 46,
+    "fields": {
+        "title": "Cambodia",
+        "parent": 4,
+        "slug": "KH",
+        "lft": 137,
+        "rght": 138,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 47,
+    "fields": {
+        "title": "Cameroon",
+        "parent": 2,
+        "slug": "CM",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 48,
+    "fields": {
+        "title": "Canada",
+        "parent": 6,
+        "slug": "CA",
+        "lft": 351,
+        "rght": 352,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 49,
+    "fields": {
+        "title": "Cape Verde",
+        "parent": 2,
+        "slug": "CV",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 50,
+    "fields": {
+        "title": "Cayman Islands",
+        "parent": 6,
+        "slug": "KY",
+        "lft": 353,
+        "rght": 354,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 51,
+    "fields": {
+        "title": "Central African Republic",
+        "parent": 2,
+        "slug": "CF",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 52,
+    "fields": {
+        "title": "Chad",
+        "parent": 2,
+        "slug": "TD",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 53,
+    "fields": {
+        "title": "Chile",
+        "parent": 8,
+        "slug": "CL",
+        "lft": 479,
+        "rght": 480,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 54,
+    "fields": {
+        "title": "China",
+        "parent": 4,
+        "slug": "CN",
+        "lft": 139,
+        "rght": 140,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 55,
+    "fields": {
+        "title": "Christmas Island",
+        "parent": 4,
+        "slug": "CX",
+        "lft": 141,
+        "rght": 142,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 56,
+    "fields": {
+        "title": "Cocos (Keeling) Islands",
+        "parent": 4,
+        "slug": "CC",
+        "lft": 143,
+        "rght": 144,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 57,
+    "fields": {
+        "title": "Colombia",
+        "parent": 8,
+        "slug": "CO",
+        "lft": 481,
+        "rght": 482,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 58,
+    "fields": {
+        "title": "Comoros",
+        "parent": 2,
+        "slug": "KM",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 59,
+    "fields": {
+        "title": "Congo",
+        "parent": 2,
+        "slug": "CG",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 60,
+    "fields": {
+        "title": "Congo, The Democratic Republic of the",
+        "parent": 2,
+        "slug": "CD",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 61,
+    "fields": {
+        "title": "Cook Islands",
+        "parent": 7,
+        "slug": "CK",
+        "lft": 425,
+        "rght": 426,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 62,
+    "fields": {
+        "title": "Costa Rica",
+        "parent": 6,
+        "slug": "CR",
+        "lft": 355,
+        "rght": 356,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 63,
+    "fields": {
+        "title": "C\u00f4te d'Ivoire",
+        "parent": 2,
+        "slug": "CI",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 64,
+    "fields": {
+        "title": "Croatia",
+        "parent": 5,
+        "slug": "HR",
+        "lft": 249,
+        "rght": 250,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 65,
+    "fields": {
+        "title": "Cuba",
+        "parent": 6,
+        "slug": "CU",
+        "lft": 357,
+        "rght": 358,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 66,
+    "fields": {
+        "title": "Cura\u00e7ao",
+        "parent": 6,
+        "slug": "CW",
+        "lft": 359,
+        "rght": 360,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 67,
+    "fields": {
+        "title": "Cyprus",
+        "parent": 4,
+        "slug": "CY",
+        "lft": 145,
+        "rght": 146,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 68,
+    "fields": {
+        "title": "Czech Republic",
+        "parent": 5,
+        "slug": "CZ",
+        "lft": 251,
+        "rght": 252,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 69,
+    "fields": {
+        "title": "Denmark",
+        "parent": 5,
+        "slug": "DK",
+        "lft": 253,
+        "rght": 254,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 70,
+    "fields": {
+        "title": "Djibouti",
+        "parent": 2,
+        "slug": "DJ",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 71,
+    "fields": {
+        "title": "Dominica",
+        "parent": 6,
+        "slug": "DM",
+        "lft": 361,
+        "rght": 362,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 72,
+    "fields": {
+        "title": "Dominican Republic",
+        "parent": 6,
+        "slug": "DO",
+        "lft": 363,
+        "rght": 364,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 73,
+    "fields": {
+        "title": "Ecuador",
+        "parent": 8,
+        "slug": "EC",
+        "lft": 483,
+        "rght": 484,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 74,
+    "fields": {
+        "title": "Egypt",
+        "parent": 2,
+        "slug": "EG",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 75,
+    "fields": {
+        "title": "El Salvador",
+        "parent": 6,
+        "slug": "SV",
+        "lft": 365,
+        "rght": 366,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 76,
+    "fields": {
+        "title": "Equatorial Guinea",
+        "parent": 2,
+        "slug": "GQ",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 77,
+    "fields": {
+        "title": "Eritrea",
+        "parent": 2,
+        "slug": "ER",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 78,
+    "fields": {
+        "title": "Estonia",
+        "parent": 5,
+        "slug": "EE",
+        "lft": 255,
+        "rght": 256,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 79,
+    "fields": {
+        "title": "Ethiopia",
+        "parent": 2,
+        "slug": "ET",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 80,
+    "fields": {
+        "title": "Falkland Islands (Malvinas)",
+        "parent": 8,
+        "slug": "FK",
+        "lft": 485,
+        "rght": 486,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 81,
+    "fields": {
+        "title": "Faroe Islands",
+        "parent": 5,
+        "slug": "FO",
+        "lft": 257,
+        "rght": 258,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 82,
+    "fields": {
+        "title": "Fiji",
+        "parent": 7,
+        "slug": "FJ",
+        "lft": 427,
+        "rght": 428,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 83,
+    "fields": {
+        "title": "Finland",
+        "parent": 5,
+        "slug": "FI",
+        "lft": 259,
+        "rght": 260,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 84,
+    "fields": {
+        "title": "France",
+        "parent": 5,
+        "slug": "FR",
+        "lft": 261,
+        "rght": 262,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 85,
+    "fields": {
+        "title": "French Guiana",
+        "parent": 8,
+        "slug": "GF",
+        "lft": 487,
+        "rght": 488,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 86,
+    "fields": {
+        "title": "French Polynesia",
+        "parent": 7,
+        "slug": "PF",
+        "lft": 429,
+        "rght": 430,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 88,
+    "fields": {
+        "title": "Gabon",
+        "parent": 2,
+        "slug": "GA",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 89,
+    "fields": {
+        "title": "Gambia",
+        "parent": 2,
+        "slug": "GM",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 90,
+    "fields": {
+        "title": "Georgia",
+        "parent": 4,
+        "slug": "GE",
+        "lft": 147,
+        "rght": 148,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 91,
+    "fields": {
+        "title": "Germany",
+        "parent": 5,
+        "slug": "DE",
+        "lft": 263,
+        "rght": 264,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 92,
+    "fields": {
+        "title": "Ghana",
+        "parent": 2,
+        "slug": "GH",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 93,
+    "fields": {
+        "title": "Gibraltar",
+        "parent": 5,
+        "slug": "GI",
+        "lft": 265,
+        "rght": 266,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 94,
+    "fields": {
+        "title": "Greece",
+        "parent": 5,
+        "slug": "GR",
+        "lft": 267,
+        "rght": 268,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 95,
+    "fields": {
+        "title": "Greenland",
+        "parent": 6,
+        "slug": "GL",
+        "lft": 367,
+        "rght": 368,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 96,
+    "fields": {
+        "title": "Grenada",
+        "parent": 6,
+        "slug": "GD",
+        "lft": 369,
+        "rght": 370,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 97,
+    "fields": {
+        "title": "Guadeloupe",
+        "parent": 6,
+        "slug": "GP",
+        "lft": 371,
+        "rght": 372,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 98,
+    "fields": {
+        "title": "Guam",
+        "parent": 7,
+        "slug": "GU",
+        "lft": 431,
+        "rght": 432,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 99,
+    "fields": {
+        "title": "Guatemala",
+        "parent": 6,
+        "slug": "GT",
+        "lft": 373,
+        "rght": 374,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 100,
+    "fields": {
+        "title": "Guernsey",
+        "parent": 5,
+        "slug": "GG",
+        "lft": 269,
+        "rght": 270,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 101,
+    "fields": {
+        "title": "Guinea",
+        "parent": 2,
+        "slug": "GN",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 102,
+    "fields": {
+        "title": "Guinea-Bissau",
+        "parent": 2,
+        "slug": "GW",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 103,
+    "fields": {
+        "title": "Guyana",
+        "parent": 8,
+        "slug": "GY",
+        "lft": 489,
+        "rght": 490,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 104,
+    "fields": {
+        "title": "Haiti",
+        "parent": 6,
+        "slug": "HT",
+        "lft": 375,
+        "rght": 376,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 106,
+    "fields": {
+        "title": "Holy See (Vatican City State)",
+        "parent": 5,
+        "slug": "VA",
+        "lft": 271,
+        "rght": 272,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 107,
+    "fields": {
+        "title": "Honduras",
+        "parent": 6,
+        "slug": "HN",
+        "lft": 377,
+        "rght": 378,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 108,
+    "fields": {
+        "title": "Hong Kong",
+        "parent": 4,
+        "slug": "HK",
+        "lft": 149,
+        "rght": 150,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 109,
+    "fields": {
+        "title": "Hungary",
+        "parent": 5,
+        "slug": "HU",
+        "lft": 273,
+        "rght": 274,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 110,
+    "fields": {
+        "title": "Iceland",
+        "parent": 5,
+        "slug": "IS",
+        "lft": 275,
+        "rght": 276,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 111,
+    "fields": {
+        "title": "India",
+        "parent": 4,
+        "slug": "IN",
+        "lft": 151,
+        "rght": 152,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 112,
+    "fields": {
+        "title": "Indonesia",
+        "parent": 4,
+        "slug": "ID",
+        "lft": 153,
+        "rght": 154,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 113,
+    "fields": {
+        "title": "Iran, Islamic Republic of",
+        "parent": 4,
+        "slug": "IR",
+        "lft": 155,
+        "rght": 156,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 114,
+    "fields": {
+        "title": "Iraq",
+        "parent": 4,
+        "slug": "IQ",
+        "lft": 157,
+        "rght": 158,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 115,
+    "fields": {
+        "title": "Ireland",
+        "parent": 5,
+        "slug": "IE",
+        "lft": 277,
+        "rght": 278,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 116,
+    "fields": {
+        "title": "Isle of Man",
+        "parent": 5,
+        "slug": "IM",
+        "lft": 279,
+        "rght": 280,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 117,
+    "fields": {
+        "title": "Israel",
+        "parent": 4,
+        "slug": "IL",
+        "lft": 159,
+        "rght": 160,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 118,
+    "fields": {
+        "title": "Italy",
+        "parent": 5,
+        "slug": "IT",
+        "lft": 281,
+        "rght": 282,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 119,
+    "fields": {
+        "title": "Jamaica",
+        "parent": 6,
+        "slug": "JM",
+        "lft": 379,
+        "rght": 380,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 120,
+    "fields": {
+        "title": "Japan",
+        "parent": 4,
+        "slug": "JP",
+        "lft": 161,
+        "rght": 162,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 121,
+    "fields": {
+        "title": "Jersey",
+        "parent": 5,
+        "slug": "JE",
+        "lft": 283,
+        "rght": 284,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 122,
+    "fields": {
+        "title": "Jordan",
+        "parent": 4,
+        "slug": "JO",
+        "lft": 163,
+        "rght": 164,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 123,
+    "fields": {
+        "title": "Kazakhstan",
+        "parent": 4,
+        "slug": "KZ",
+        "lft": 165,
+        "rght": 166,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 124,
+    "fields": {
+        "title": "Kenya",
+        "parent": 2,
+        "slug": "KE",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 125,
+    "fields": {
+        "title": "Kiribati",
+        "parent": 7,
+        "slug": "KI",
+        "lft": 433,
+        "rght": 434,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 126,
+    "fields": {
+        "title": "Korea, Democratic People's Republic of",
+        "parent": 4,
+        "slug": "KP",
+        "lft": 167,
+        "rght": 168,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 127,
+    "fields": {
+        "title": "Korea, Republic of",
+        "parent": 4,
+        "slug": "KR",
+        "lft": 169,
+        "rght": 170,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 128,
+    "fields": {
+        "title": "Kuwait",
+        "parent": 4,
+        "slug": "KW",
+        "lft": 171,
+        "rght": 172,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 129,
+    "fields": {
+        "title": "Kyrgyzstan",
+        "parent": 4,
+        "slug": "KG",
+        "lft": 173,
+        "rght": 174,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 130,
+    "fields": {
+        "title": "Lao People's Democratic Republic",
+        "parent": 4,
+        "slug": "LA",
+        "lft": 175,
+        "rght": 176,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 131,
+    "fields": {
+        "title": "Latvia",
+        "parent": 5,
+        "slug": "LV",
+        "lft": 285,
+        "rght": 286,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 132,
+    "fields": {
+        "title": "Lebanon",
+        "parent": 4,
+        "slug": "LB",
+        "lft": 177,
+        "rght": 178,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 133,
+    "fields": {
+        "title": "Lesotho",
+        "parent": 2,
+        "slug": "LS",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 134,
+    "fields": {
+        "title": "Liberia",
+        "parent": 2,
+        "slug": "LR",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 135,
+    "fields": {
+        "title": "Libya",
+        "parent": 2,
+        "slug": "LY",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 136,
+    "fields": {
+        "title": "Liechtenstein",
+        "parent": 5,
+        "slug": "LI",
+        "lft": 287,
+        "rght": 288,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 137,
+    "fields": {
+        "title": "Lithuania",
+        "parent": 5,
+        "slug": "LT",
+        "lft": 289,
+        "rght": 290,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 138,
+    "fields": {
+        "title": "Luxembourg",
+        "parent": 5,
+        "slug": "LU",
+        "lft": 291,
+        "rght": 292,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 139,
+    "fields": {
+        "title": "Macao",
+        "parent": 4,
+        "slug": "MO",
+        "lft": 179,
+        "rght": 180,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 140,
+    "fields": {
+        "title": "Macedonia, Republic of",
+        "parent": 5,
+        "slug": "MK",
+        "lft": 293,
+        "rght": 294,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 141,
+    "fields": {
+        "title": "Madagascar",
+        "parent": 2,
+        "slug": "MG",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 142,
+    "fields": {
+        "title": "Malawi",
+        "parent": 2,
+        "slug": "MW",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 143,
+    "fields": {
+        "title": "Malaysia",
+        "parent": 4,
+        "slug": "MY",
+        "lft": 181,
+        "rght": 182,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 144,
+    "fields": {
+        "title": "Maldives",
+        "parent": 4,
+        "slug": "MV",
+        "lft": 183,
+        "rght": 184,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 145,
+    "fields": {
+        "title": "Mali",
+        "parent": 2,
+        "slug": "ML",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 146,
+    "fields": {
+        "title": "Malta",
+        "parent": 5,
+        "slug": "MT",
+        "lft": 295,
+        "rght": 296,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 147,
+    "fields": {
+        "title": "Marshall Islands",
+        "parent": 7,
+        "slug": "MH",
+        "lft": 435,
+        "rght": 436,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 148,
+    "fields": {
+        "title": "Martinique",
+        "parent": 6,
+        "slug": "MQ",
+        "lft": 381,
+        "rght": 382,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 149,
+    "fields": {
+        "title": "Mauritania",
+        "parent": 2,
+        "slug": "MR",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 150,
+    "fields": {
+        "title": "Mauritius",
+        "parent": 2,
+        "slug": "MU",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 151,
+    "fields": {
+        "title": "Mayotte",
+        "parent": 2,
+        "slug": "YT",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 152,
+    "fields": {
+        "title": "Mexico",
+        "parent": 6,
+        "slug": "MX",
+        "lft": 383,
+        "rght": 384,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 153,
+    "fields": {
+        "title": "Micronesia, Federated States of",
+        "parent": 7,
+        "slug": "FM",
+        "lft": 437,
+        "rght": 438,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 154,
+    "fields": {
+        "title": "Moldova, Republic of",
+        "parent": 5,
+        "slug": "MD",
+        "lft": 297,
+        "rght": 298,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 155,
+    "fields": {
+        "title": "Monaco",
+        "parent": 5,
+        "slug": "MC",
+        "lft": 299,
+        "rght": 300,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 156,
+    "fields": {
+        "title": "Mongolia",
+        "parent": 4,
+        "slug": "MN",
+        "lft": 185,
+        "rght": 186,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 157,
+    "fields": {
+        "title": "Montenegro",
+        "parent": 5,
+        "slug": "ME",
+        "lft": 301,
+        "rght": 302,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 158,
+    "fields": {
+        "title": "Montserrat",
+        "parent": 6,
+        "slug": "MS",
+        "lft": 385,
+        "rght": 386,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 159,
+    "fields": {
+        "title": "Morocco",
+        "parent": 2,
+        "slug": "MA",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 160,
+    "fields": {
+        "title": "Mozambique",
+        "parent": 2,
+        "slug": "MZ",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 161,
+    "fields": {
+        "title": "Myanmar",
+        "parent": 4,
+        "slug": "MM",
+        "lft": 187,
+        "rght": 188,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 162,
+    "fields": {
+        "title": "Namibia",
+        "parent": 2,
+        "slug": "NA",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 163,
+    "fields": {
+        "title": "Nauru",
+        "parent": 7,
+        "slug": "NR",
+        "lft": 439,
+        "rght": 440,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 164,
+    "fields": {
+        "title": "Nepal",
+        "parent": 4,
+        "slug": "NP",
+        "lft": 189,
+        "rght": 190,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 165,
+    "fields": {
+        "title": "Netherlands",
+        "parent": 5,
+        "slug": "NL",
+        "lft": 303,
+        "rght": 304,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 166,
+    "fields": {
+        "title": "New Caledonia",
+        "parent": 7,
+        "slug": "NC",
+        "lft": 441,
+        "rght": 442,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 167,
+    "fields": {
+        "title": "New Zealand",
+        "parent": 7,
+        "slug": "NZ",
+        "lft": 443,
+        "rght": 444,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 168,
+    "fields": {
+        "title": "Nicaragua",
+        "parent": 6,
+        "slug": "NI",
+        "lft": 387,
+        "rght": 388,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 169,
+    "fields": {
+        "title": "Niger",
+        "parent": 2,
+        "slug": "NE",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 170,
+    "fields": {
+        "title": "Nigeria",
+        "parent": 2,
+        "slug": "NG",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 171,
+    "fields": {
+        "title": "Niue",
+        "parent": 7,
+        "slug": "NU",
+        "lft": 445,
+        "rght": 446,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 172,
+    "fields": {
+        "title": "Norfolk Island",
+        "parent": 7,
+        "slug": "NF",
+        "lft": 447,
+        "rght": 448,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 173,
+    "fields": {
+        "title": "Northern Mariana Islands",
+        "parent": 7,
+        "slug": "MP",
+        "lft": 449,
+        "rght": 450,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 174,
+    "fields": {
+        "title": "Norway",
+        "parent": 5,
+        "slug": "NO",
+        "lft": 305,
+        "rght": 306,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 175,
+    "fields": {
+        "title": "Oman",
+        "parent": 4,
+        "slug": "OM",
+        "lft": 191,
+        "rght": 192,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 176,
+    "fields": {
+        "title": "Pakistan",
+        "parent": 4,
+        "slug": "PK",
+        "lft": 193,
+        "rght": 194,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 177,
+    "fields": {
+        "title": "Palau",
+        "parent": 7,
+        "slug": "PW",
+        "lft": 451,
+        "rght": 452,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 178,
+    "fields": {
+        "title": "Palestinian Territory, Occupied",
+        "parent": 4,
+        "slug": "PS",
+        "lft": 195,
+        "rght": 196,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 179,
+    "fields": {
+        "title": "Panama",
+        "parent": 6,
+        "slug": "PA",
+        "lft": 389,
+        "rght": 390,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 180,
+    "fields": {
+        "title": "Papua New Guinea",
+        "parent": 7,
+        "slug": "PG",
+        "lft": 453,
+        "rght": 454,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 181,
+    "fields": {
+        "title": "Paraguay",
+        "parent": 8,
+        "slug": "PY",
+        "lft": 491,
+        "rght": 492,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 182,
+    "fields": {
+        "title": "Peru",
+        "parent": 8,
+        "slug": "PE",
+        "lft": 493,
+        "rght": 494,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 183,
+    "fields": {
+        "title": "Philippines",
+        "parent": 4,
+        "slug": "PH",
+        "lft": 197,
+        "rght": 198,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 184,
+    "fields": {
+        "title": "Pitcairn",
+        "parent": 7,
+        "slug": "PN",
+        "lft": 455,
+        "rght": 456,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 185,
+    "fields": {
+        "title": "Poland",
+        "parent": 5,
+        "slug": "PL",
+        "lft": 307,
+        "rght": 308,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 186,
+    "fields": {
+        "title": "Portugal",
+        "parent": 5,
+        "slug": "PT",
+        "lft": 309,
+        "rght": 310,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 187,
+    "fields": {
+        "title": "Puerto Rico",
+        "parent": 6,
+        "slug": "PR",
+        "lft": 391,
+        "rght": 392,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 188,
+    "fields": {
+        "title": "Qatar",
+        "parent": 4,
+        "slug": "QA",
+        "lft": 199,
+        "rght": 200,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 189,
+    "fields": {
+        "title": "R\u00e9union",
+        "parent": 2,
+        "slug": "RE",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 190,
+    "fields": {
+        "title": "Romania",
+        "parent": 5,
+        "slug": "RO",
+        "lft": 311,
+        "rght": 312,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 191,
+    "fields": {
+        "title": "Russian Federation",
+        "parent": 4,
+        "slug": "RU",
+        "lft": 201,
+        "rght": 202,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 192,
+    "fields": {
+        "title": "Rwanda",
+        "parent": 2,
+        "slug": "RW",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 193,
+    "fields": {
+        "title": "Saint Barth\u00e9lemy",
+        "parent": 6,
+        "slug": "BL",
+        "lft": 393,
+        "rght": 394,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 194,
+    "fields": {
+        "title": "Saint Helena, Ascension and Tristan da Cunha",
+        "parent": 2,
+        "slug": "SH",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 195,
+    "fields": {
+        "title": "Saint Kitts and Nevis",
+        "parent": 6,
+        "slug": "KN",
+        "lft": 395,
+        "rght": 396,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 196,
+    "fields": {
+        "title": "Saint Lucia",
+        "parent": 6,
+        "slug": "LC",
+        "lft": 397,
+        "rght": 398,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 197,
+    "fields": {
+        "title": "Saint Martin (French part)",
+        "parent": 6,
+        "slug": "MF",
+        "lft": 399,
+        "rght": 400,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 198,
+    "fields": {
+        "title": "Saint Pierre and Miquelon",
+        "parent": 6,
+        "slug": "PM",
+        "lft": 401,
+        "rght": 402,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 199,
+    "fields": {
+        "title": "Saint Vincent and the Grenadines",
+        "parent": 6,
+        "slug": "VC",
+        "lft": 403,
+        "rght": 404,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 200,
+    "fields": {
+        "title": "Samoa",
+        "parent": 7,
+        "slug": "WS",
+        "lft": 457,
+        "rght": 458,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 201,
+    "fields": {
+        "title": "San Marino",
+        "parent": 5,
+        "slug": "SM",
+        "lft": 313,
+        "rght": 314,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 202,
+    "fields": {
+        "title": "Sao Tome and Principe",
+        "parent": 2,
+        "slug": "ST",
+        "lft": 87,
+        "rght": 88,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 203,
+    "fields": {
+        "title": "Saudi Arabia",
+        "parent": 4,
+        "slug": "SA",
+        "lft": 203,
+        "rght": 204,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 204,
+    "fields": {
+        "title": "Senegal",
+        "parent": 2,
+        "slug": "SN",
+        "lft": 89,
+        "rght": 90,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 205,
+    "fields": {
+        "title": "Serbia",
+        "parent": 5,
+        "slug": "RS",
+        "lft": 315,
+        "rght": 316,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 206,
+    "fields": {
+        "title": "Seychelles",
+        "parent": 2,
+        "slug": "SC",
+        "lft": 91,
+        "rght": 92,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 207,
+    "fields": {
+        "title": "Sierra Leone",
+        "parent": 2,
+        "slug": "SL",
+        "lft": 93,
+        "rght": 94,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 208,
+    "fields": {
+        "title": "Singapore",
+        "parent": 4,
+        "slug": "SG",
+        "lft": 205,
+        "rght": 206,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 209,
+    "fields": {
+        "title": "Sint Maarten (Dutch part)",
+        "parent": 6,
+        "slug": "SX",
+        "lft": 405,
+        "rght": 406,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 210,
+    "fields": {
+        "title": "Slovakia",
+        "parent": 5,
+        "slug": "SK",
+        "lft": 317,
+        "rght": 318,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 211,
+    "fields": {
+        "title": "Slovenia",
+        "parent": 5,
+        "slug": "SI",
+        "lft": 319,
+        "rght": 320,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 212,
+    "fields": {
+        "title": "Solomon Islands",
+        "parent": 7,
+        "slug": "SB",
+        "lft": 459,
+        "rght": 460,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 213,
+    "fields": {
+        "title": "Somalia",
+        "parent": 2,
+        "slug": "SO",
+        "lft": 95,
+        "rght": 96,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 214,
+    "fields": {
+        "title": "South Africa",
+        "parent": 2,
+        "slug": "ZA",
+        "lft": 97,
+        "rght": 98,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 216,
+    "fields": {
+        "title": "Spain",
+        "parent": 5,
+        "slug": "ES",
+        "lft": 321,
+        "rght": 322,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 217,
+    "fields": {
+        "title": "Sri Lanka",
+        "parent": 4,
+        "slug": "LK",
+        "lft": 207,
+        "rght": 208,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 218,
+    "fields": {
+        "title": "Sudan",
+        "parent": 2,
+        "slug": "SD",
+        "lft": 99,
+        "rght": 100,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 219,
+    "fields": {
+        "title": "Suriname",
+        "parent": 8,
+        "slug": "SR",
+        "lft": 495,
+        "rght": 496,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 220,
+    "fields": {
+        "title": "South Sudan",
+        "parent": 2,
+        "slug": "SS",
+        "lft": 101,
+        "rght": 102,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 221,
+    "fields": {
+        "title": "Svalbard and Jan Mayen",
+        "parent": 5,
+        "slug": "SJ",
+        "lft": 323,
+        "rght": 324,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 222,
+    "fields": {
+        "title": "Swaziland",
+        "parent": 2,
+        "slug": "SZ",
+        "lft": 103,
+        "rght": 104,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 223,
+    "fields": {
+        "title": "Sweden",
+        "parent": 5,
+        "slug": "SE",
+        "lft": 325,
+        "rght": 326,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 224,
+    "fields": {
+        "title": "Switzerland",
+        "parent": 5,
+        "slug": "CH",
+        "lft": 327,
+        "rght": 328,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 225,
+    "fields": {
+        "title": "Syrian Arab Republic",
+        "parent": 4,
+        "slug": "SY",
+        "lft": 209,
+        "rght": 210,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 226,
+    "fields": {
+        "title": "Taiwan, Province of China",
+        "parent": 4,
+        "slug": "TW",
+        "lft": 211,
+        "rght": 212,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 227,
+    "fields": {
+        "title": "Tajikistan",
+        "parent": 4,
+        "slug": "TJ",
+        "lft": 213,
+        "rght": 214,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 228,
+    "fields": {
+        "title": "Tanzania, United Republic of",
+        "parent": 2,
+        "slug": "TZ",
+        "lft": 105,
+        "rght": 106,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 229,
+    "fields": {
+        "title": "Thailand",
+        "parent": 4,
+        "slug": "TH",
+        "lft": 215,
+        "rght": 216,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 230,
+    "fields": {
+        "title": "Timor-Leste",
+        "parent": 4,
+        "slug": "TL",
+        "lft": 217,
+        "rght": 218,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 231,
+    "fields": {
+        "title": "Togo",
+        "parent": 2,
+        "slug": "TG",
+        "lft": 107,
+        "rght": 108,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 232,
+    "fields": {
+        "title": "Tokelau",
+        "parent": 7,
+        "slug": "TK",
+        "lft": 461,
+        "rght": 462,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 233,
+    "fields": {
+        "title": "Tonga",
+        "parent": 7,
+        "slug": "TO",
+        "lft": 463,
+        "rght": 464,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 234,
+    "fields": {
+        "title": "Trinidad and Tobago",
+        "parent": 6,
+        "slug": "TT",
+        "lft": 407,
+        "rght": 408,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 235,
+    "fields": {
+        "title": "Tunisia",
+        "parent": 2,
+        "slug": "TN",
+        "lft": 109,
+        "rght": 110,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 236,
+    "fields": {
+        "title": "Turkey",
+        "parent": 4,
+        "slug": "TR",
+        "lft": 219,
+        "rght": 220,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 237,
+    "fields": {
+        "title": "Turkmenistan",
+        "parent": 4,
+        "slug": "TM",
+        "lft": 221,
+        "rght": 222,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 238,
+    "fields": {
+        "title": "Turks and Caicos Islands",
+        "parent": 6,
+        "slug": "TC",
+        "lft": 409,
+        "rght": 410,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 239,
+    "fields": {
+        "title": "Tuvalu",
+        "parent": 7,
+        "slug": "TV",
+        "lft": 465,
+        "rght": 466,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 240,
+    "fields": {
+        "title": "Uganda",
+        "parent": 2,
+        "slug": "UG",
+        "lft": 111,
+        "rght": 112,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 241,
+    "fields": {
+        "title": "Ukraine",
+        "parent": 5,
+        "slug": "UA",
+        "lft": 329,
+        "rght": 330,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 242,
+    "fields": {
+        "title": "United Arab Emirates",
+        "parent": 4,
+        "slug": "AE",
+        "lft": 223,
+        "rght": 224,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 243,
+    "fields": {
+        "title": "United Kingdom",
+        "parent": 5,
+        "slug": "GB",
+        "lft": 331,
+        "rght": 332,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 244,
+    "fields": {
+        "title": "United States",
+        "parent": 6,
+        "slug": "US",
+        "lft": 411,
+        "rght": 412,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 245,
+    "fields": {
+        "title": "United States Minor Outlying Islands",
+        "parent": 6,
+        "slug": "UM",
+        "lft": 413,
+        "rght": 414,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 246,
+    "fields": {
+        "title": "Uruguay",
+        "parent": 8,
+        "slug": "UY",
+        "lft": 497,
+        "rght": 498,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 247,
+    "fields": {
+        "title": "Uzbekistan",
+        "parent": 4,
+        "slug": "UZ",
+        "lft": 225,
+        "rght": 226,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 248,
+    "fields": {
+        "title": "Vanuatu",
+        "parent": 7,
+        "slug": "VU",
+        "lft": 467,
+        "rght": 468,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 249,
+    "fields": {
+        "title": "Venezuela, Bolivarian Republic of",
+        "parent": 8,
+        "slug": "VE",
+        "lft": 499,
+        "rght": 500,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 250,
+    "fields": {
+        "title": "Viet Nam",
+        "parent": 4,
+        "slug": "VN",
+        "lft": 227,
+        "rght": 228,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 251,
+    "fields": {
+        "title": "Virgin Islands, British",
+        "parent": 6,
+        "slug": "VG",
+        "lft": 415,
+        "rght": 416,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 252,
+    "fields": {
+        "title": "Virgin Islands, U.S.",
+        "parent": 6,
+        "slug": "VI",
+        "lft": 417,
+        "rght": 418,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 253,
+    "fields": {
+        "title": "Wallis and Futuna",
+        "parent": 7,
+        "slug": "WF",
+        "lft": 469,
+        "rght": 470,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 254,
+    "fields": {
+        "title": "Western Sahara",
+        "parent": 2,
+        "slug": "EH",
+        "lft": 113,
+        "rght": 114,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 255,
+    "fields": {
+        "title": "Yemen",
+        "parent": 4,
+        "slug": "YE",
+        "lft": 229,
+        "rght": 230,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 256,
+    "fields": {
+        "title": "Zambia",
+        "parent": 2,
+        "slug": "ZM",
+        "lft": 115,
+        "rght": 116,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 257,
+    "fields": {
+        "title": "Zimbabwe",
+        "parent": 2,
+        "slug": "ZW",
+        "lft": 117,
+        "rght": 118,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "risk.country",
+    "pk": 258,
+    "fields": {
+        "title": "World",
+        "parent": null,
+        "slug": "world",
+        "lft": 1,
+        "rght": 502,
+        "tree_id": 2,
+        "level": 0
+    }
+}
+]

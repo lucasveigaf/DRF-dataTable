@@ -50,3 +50,18 @@ class Responses(models.Model):
         verbose_name_plural = 'Responses'
 
 
+class Country(MPTTModel):
+    title    = models.CharField('Country name', max_length=50)
+    parent   = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='countries', on_delete=models.CASCADE)
+    slug     = models.SlugField(unique=True, default='slug')
+    
+    def __str__(self):        
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('country', kwargs={'path': self.get_path()})
+
+    class Meta:
+        verbose_name_plural = 'Countries'
+
+
