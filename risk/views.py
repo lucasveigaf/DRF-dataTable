@@ -7,6 +7,20 @@ from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from django.core.exceptions import ObjectDoesNotExist
 
+def country(request, path, instance, extra):
+    if not instance:
+        return render(request, "404.html")
+
+    return render(
+        request,
+        'risk/country.html',
+        {
+            'instance': instance,
+            'children': instance.get_children()
+        }
+    )
+
+
 def risk(request, path, instance, extra):
     if not instance:
         return render(request, "404.html")

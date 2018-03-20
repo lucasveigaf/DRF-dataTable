@@ -1,0 +1,246 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Countries</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'stylesheets/jquery.dataTables.css' %}" type="text/css"/>
+</head>
+
+
+<div class="container">
+
+<!-- Start of Breadcrumbs (based on mptt tree-->
+
+<br>
+<br>
+        Country tree
+        {% for ancestor in instance.get_ancestors %}
+            > <a href="{{ ancestor.get_absolute_url }}">{{ ancestor.title }}</a>
+        {% endfor %}
+        > <strong>{{ instance.title }}</strong>
+
+        <ul>
+            {% for child in children %}
+                <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a> </li>
+            {% empty %}
+                <li>No more subcategories</li>
+            {% endfor %}
+        </ul>
+
+<!-- End of Breadcrumbs -->
+
+
+<hr>
+
+Risks
+
+
+<!-- RISK Datatable  -->
+
+    <!-- Start of New  button -->
+    <div class="text-center">
+        <button type="button" data-dismiss="modal" class="btn btn-primary" id="new">New</button>
+    </div>
+    <!-- End of New  button -->
+
+
+    <!-- Start of RISK Datatables -->
+    <table id="datatables" class="table table-hover" modelslug="{{ instance.slug }}">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>parent</th>            
+            <th>description</th>  
+            <th>slug</th>          
+            <th>last_modify_date</th>
+            <th>created</th>
+            <th>action</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+
+        </tr>
+        </tfoot>
+    </table>
+    <!-- End of Datatables -->
+
+
+    <!-- Start of Modal (NEW and EDIT) -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal_title"></h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label for="title"><span class="glyphicon glyphicon-pencil"></span> Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
+                                   required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parent"><span class="glyphicon glyphicon-file"></span> parent</label>
+                            <input type="text" class="form-control" id="parent" name="parent"
+                                   placeholder="Enter parent" required="false">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
+                            <input type="text" class="form-control" id="description" name="description"
+                                   placeholder="Enter Description" required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slug"><span class="glyphicon glyphicon-file"></span> slug</label>
+                            <input type="text" class="form-control" id="slug" name="slug"
+                                   placeholder="Enter slug" required="true">
+                        </div>
+
+                        <input type="hidden" id="type" name="type" value="">
+                        <button type="submit" class="btn btn-success btn-block"><span
+                                class="glyphicon glyphicon-ok"></span> OK
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal (NEW and EDIT) -->
+
+
+
+    <!-- Start of Modal (DELETE) -->
+    <div class="modal fade" id="confirm" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure?</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" id="delete">Delete</button>
+                    <button type="button" data-dismiss="modal" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal (DELETE) -->
+
+<br>
+<br>
+<br>
+
+<hr>
+
+
+Responses
+
+<!-- RESPONSE Datatable  -->
+
+    <!-- Start of New  button -->
+    <div class="text-center">
+        <button type="button" data-dismiss="modal" class="btn btn-primary" id="new">New</button>
+    </div>
+    <!-- End of New  button -->
+
+
+    <!-- Start of Datatables -->
+    <table id="datatables2" class="table table-hover" modelslug="{{ instance.slug }}">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Risk</th>
+            <th>Response</th>           
+            <th>Description</th>          
+            <th>Modified</th>
+            <th>Created</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+
+        </tr>
+        </tfoot>
+    </table>
+    <!-- End of Datatables -->
+
+
+    <!-- Start of Modal (NEW and EDIT) -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal_title"></h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label for="risk"><span class="glyphicon glyphicon-pencil"></span> Risk</label>
+                            <input type="text" class="form-control" id="risk" name="risk" placeholder="Enter Risk"
+                                   required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="responsesCategory"><span class="glyphicon glyphicon-file"></span> responsesCategory</label>
+                            <input type="text" class="form-control" id="responsesCategory" name="responsesCategory"
+                                   placeholder="Enter responsesCategory" required="false">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
+                            <input type="text" class="form-control" id="description" name="description"
+                                   placeholder="Enter Description" required="true">
+                        </div>
+
+                        <input type="hidden" id="type" name="type" value="">
+                        <button type="submit" class="btn btn-success btn-block"><span
+                                class="glyphicon glyphicon-ok"></span> OK
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal (NEW and EDIT) -->
+
+
+
+    <!-- Start of Modal (DELETE) -->
+    <div class="modal fade" id="confirm" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure?</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" id="delete">Delete</button>
+                    <button type="button" data-dismiss="modal" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal (DELETE) -->
+
+</div>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.dataTables.js' %}"></script>
+<script src="{% static 'js/dataTables.js' %}"></script>
+
+</div> 
+
+
+

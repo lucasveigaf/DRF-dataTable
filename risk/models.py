@@ -5,6 +5,24 @@ from model_utils import Choices
 from django.urls import reverse
 from mptt.models import MPTTModel, TreeForeignKey 
 
+
+class Country(MPTTModel):
+    title    = models.CharField('Country name', max_length=50)
+    parent   = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='countries', on_delete=models.CASCADE)
+    slug     = models.SlugField(unique=True, default='slug')
+    
+    def __str__(self):        
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('country', kwargs={'path': self.get_path()})
+
+    class Meta:
+        verbose_name_plural = 'Countries'
+
+
+
+
 class Risk(MPTTModel):
     title            = models.CharField('Risk category name', max_length=200)
     parent           = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='riskcategories', on_delete=models.CASCADE)
@@ -19,6 +37,8 @@ class Risk(MPTTModel):
 
     def __str__(self):        
         return self.title
+
+
 
 ORDER_COLUMN_CHOICES = Choices(
     ('0', 'id'),
@@ -49,19 +69,5 @@ class Responses(models.Model):
     class Meta:
         verbose_name_plural = 'Responses'
 
-
-class Country(MPTTModel):
-    title    = models.CharField('Country name', max_length=50)
-    parent   = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='countries', on_delete=models.CASCADE)
-    slug     = models.SlugField(unique=True, default='slug')
-    
-    def __str__(self):        
-        return self.title
-
-    def get_absolute_url(self):
-        return reverse('country', kwargs={'path': self.get_path()})
-
-    class Meta:
-        verbose_name_plural = 'Countries'
 
 
