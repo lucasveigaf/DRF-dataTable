@@ -1,8 +1,10 @@
+let lastSlug = window.location.pathname.match(/([^\/]*)\/*$/)[1];
+
 let table2 = $('#datatables2').DataTable({
-    "processing": true,    //comment out to cancel server side
-    "serverSide": true,    //comment out to cancel server side
+    // "processing": true,    //comment out to cancel server side
+    // "serverSide": true,    //comment out to cancel server side
     "ajax": {
-        "url": "/api/responses/",
+        "url": "/api/responses/" + lastSlug + "/",
         "type": "GET"
     },
     "columns": [

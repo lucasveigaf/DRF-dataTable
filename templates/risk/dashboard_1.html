@@ -47,7 +47,7 @@ Risks
 
 
     <!-- Start of RISK Datatables -->
-    <table id="datatables" class="table table-hover">
+    <table id="datatables" class="table table-hover" modelslug="{{ instance.slug }}">
         <thead>
         <tr>
             <th>id</th>
@@ -153,7 +153,7 @@ Responses
 
 
     <!-- Start of Datatables -->
-    <table id="datatables2" class="table table-hover">
+    <table id="datatables2" class="table table-hover" modelslug="{{ instance.slug }}">
         <thead>
         <tr>
             <th>Id</th>
@@ -233,18 +233,12 @@ Responses
     </div>
     <!-- End of Modal (DELETE) -->
 
-
 </div>
-
 
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/jquery.dataTables.js' %}"></script>
-
-<!-- Call to datatable (only one datatable at a time ?)-->
-<script src="{% static 'js/datatable_risk.js' %}"></script>
-<script src="{% static 'js/datatable_responses.js' %}"></script>
-
+<script src="{% static 'js/dataTables.js' %}"></script>
 
 </div> 
 
