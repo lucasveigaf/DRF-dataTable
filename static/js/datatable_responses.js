@@ -1,4 +1,4 @@
-let lastSlug = window.location.pathname.match(/([^\/]*)\/*$/)[1];
+//let lastSlug = window.location.pathname.match(/([^\/]*)\/*$/)[1];
 
 let table2 = $('#datatables2').DataTable({
     // "processing": true,    //comment out to cancel server side

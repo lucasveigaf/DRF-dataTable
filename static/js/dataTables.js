@@ -8,10 +8,11 @@ let table = $('#datatables').DataTable({
     },
     "columns": [
         {"data": "id"},
-        { "data": "title",
-        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
-            $(nTd).html("<a href='" + window.location.href + oData.slug + "/'>" + oData.title+ "</a>");
-            }
+        { "data": "title"
+//        { "data": "title",
+//       "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+//            $(nTd).html("<a href='" + window.location.href + oData.slug + "/'>" + oData.title+ "</a>");
+//            }
         },
         {"data": "parent"},
         {"data": "description"},

@@ -17,7 +17,7 @@ admin.site.register(Risk, RiskAdmin)
 
 
 class ResponsesAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('risk', 'responsesCategory', 'description')
 
 admin.site.register(Responses, ResponsesAdmin)
 

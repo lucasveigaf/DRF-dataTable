@@ -35,7 +35,8 @@ RESPONSES_CATEGORY = (
 )
 
 class Responses(models.Model):
-    risk              = models.ForeignKey(Risk, null=True, blank=True, db_index=True, on_delete=models.CASCADE)
+#    risk              = models.ForeignKey(Risk, null=True, blank=True, db_index=True, on_delete=models.CASCADE)
+    risk              = TreeForeignKey(Risk, null=True, blank=True, db_index=True, on_delete=models.CASCADE)
     responsesCategory = models.CharField('Responses category', max_length=3, choices=RESPONSES_CATEGORY, default="ACC")
     description       = models.TextField('Description', max_length=300, default="Detailed description")
     last_modify_date  = models.DateTimeField(auto_now=True, null=True)     # setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
