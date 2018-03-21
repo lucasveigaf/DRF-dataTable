@@ -34,10 +34,10 @@
 
 <hr>
 
-Risks
+Country
 
 
-<!-- RISK Datatable  -->
+<!-- Country Datatable  -->
 
     <!-- Start of New  button -->
     <div class="text-center">
@@ -46,18 +46,15 @@ Risks
     <!-- End of New  button -->
 
 
-    <!-- Start of RISK Datatables -->
-    <table id="datatables" class="table table-hover" modelslug="{{ instance.slug }}">
+    <!-- Start of Country Datatables -->
+    <table id="CountryDataTable" class="table table-hover" modelslug="{{ instance.slug }}">
         <thead>
         <tr>
             <th>id</th>
             <th>title</th>
             <th>parent</th>            
-            <th>description</th>  
-            <th>slug</th>          
-            <th>last_modify_date</th>
-            <th>created</th>
-            <th>action</th>
+            <th>slug</th>     
+            <th>action</th>       
         </tr>
         </thead>
         <tfoot>
@@ -81,6 +78,12 @@ Risks
                     <form role="form">
 
                         <div class="form-group">
+                            <label for="id"><span class="glyphicon glyphicon-pencil"></span> Id</label>
+                            <input type="text" class="form-control" id="id" name="id" placeholder="Enter Id"
+                                   required="true">
+                        </div>
+
+                        <div class="form-group">
                             <label for="title"><span class="glyphicon glyphicon-pencil"></span> Title</label>
                             <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
                                    required="true">
@@ -90,12 +93,6 @@ Risks
                             <label for="parent"><span class="glyphicon glyphicon-file"></span> parent</label>
                             <input type="text" class="form-control" id="parent" name="parent"
                                    placeholder="Enter parent" required="false">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="description"><span class="glyphicon glyphicon-file"></span> description</label>
-                            <input type="text" class="form-control" id="description" name="description"
-                                   placeholder="Enter Description" required="true">
                         </div>
 
                         <div class="form-group">

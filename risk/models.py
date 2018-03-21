@@ -7,9 +7,9 @@ from mptt.models import MPTTModel, TreeForeignKey
 
 
 class Country(MPTTModel):
-    title    = models.CharField('Country name', max_length=50)
-    parent   = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='countries', on_delete=models.CASCADE)
-    slug     = models.SlugField(unique=True, default='slug')
+    title  = models.CharField('Country name', max_length=50)
+    parent = TreeForeignKey('self', null=True, blank=True, verbose_name='parent category', related_name='countries', on_delete=models.CASCADE)
+    slug   = models.SlugField(unique=True, default='slug')
     
     def __str__(self):        
         return self.title
@@ -19,9 +19,6 @@ class Country(MPTTModel):
 
     class Meta:
         verbose_name_plural = 'Countries'
-
-
-
 
 class Risk(MPTTModel):
     title            = models.CharField('Risk category name', max_length=200)

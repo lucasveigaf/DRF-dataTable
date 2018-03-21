@@ -1,9 +1,8 @@
 
-from django.conf.urls import url, include
+from django.conf.urls import url
 from django.contrib import admin
-from rest_framework.routers import DefaultRouter
 from musics.views import MusicViewSet, musics
-from risk.views import RiskViewSet, ResponsesViewSet, dashboard_2
+from risk.views import RiskViewSet, ResponsesViewSet, CountryViewSet, dashboard_2
 from django.views.generic import TemplateView
 import mptt_urls
 
@@ -14,6 +13,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/risk/(?P<risk_slug>[\w+]+)', RiskViewSet.as_view({'get': 'list'})),
     url(r'^api/responses/(?P<response_slug>[\w+]+)', ResponsesViewSet.as_view({'get': 'list'})),
+    url(r'^api/country/(?P<country_slug>[\w+]+)', CountryViewSet.as_view({'get': 'list'})),
     url(r'^dashboard_2/', dashboard_2),
     url(r'^musics/', musics),
 

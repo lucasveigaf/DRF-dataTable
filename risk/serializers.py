@@ -1,8 +1,6 @@
 from django.conf import settings
 from rest_framework import serializers
-
-from risk.models import Risk
-from risk.models import Responses
+from risk.models import Risk, Responses, Country
 
 
 class RiskSerializer(serializers.ModelSerializer):
@@ -21,3 +19,8 @@ class ResponsesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Responses
         fields = ('id', 'risk', 'responsesCategory', 'description', 'last_modify_date', 'created', 'deadlineDate')
+
+class CountrySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Country
+        fields = ('id', 'title', 'parent', 'slug')

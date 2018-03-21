@@ -1,5 +1,5 @@
-from risk.models import Risk, Responses
-from risk.serializers import RiskSerializer, ResponsesSerializer
+from risk.models import Risk, Responses, Country
+from risk.serializers import RiskSerializer, ResponsesSerializer, CountrySerializer
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from django.template.response import TemplateResponse
@@ -89,6 +89,31 @@ class ResponsesViewSet(viewsets.ModelViewSet):
             return Response(result, status=status.HTTP_200_OK)
 
         except Exception as e:
-            print(e)
+            return Response("Something went very wrong")
+
+class CountryViewSet(viewsets.ModelViewSet):
+
+    def list(self, request, **kwargs):
+        result = dict()
+        result['data'] = []
+        result['recordsTotal'] = 0
+        try:
+            qs = Country.objects.get(slug=kwargs['country_slug']).get_descendants(include_self=True) 
+            if not qs:
+                raise Country.DoesNotExist
+
+            serializedResult = CountrySerializer(qs, many=True)
+            result['data'] = serializedResult.data
+            result['recordsTotal'] = qs.count()
+            return Response(result, status=status.HTTP_200_OK)
+
+        except Country.DoesNotExist as e:
+            # if you add an error attribute to the response, dataTables plugin will
+            # automatically show an alert. And by default, will alert() if response
+            # code is != 200
+            # result['error'] = "No country found"
+            return Response(result, status=status.HTTP_200_OK)
+
+        except Exception as e:
             return Response("Something went very wrong")
 
