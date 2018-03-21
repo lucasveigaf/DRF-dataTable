@@ -1,5 +1,3 @@
-
-
 let countryTableAttribute = $("#datatables3").attr("modelslug")
 let countrytable = $('#datatables3').DataTable({
     // "processing": true,    //comment out to cancel server side
@@ -10,8 +8,7 @@ let countrytable = $('#datatables3').DataTable({
     },
     "columns": [
         {"data": "id"},
-        { "data": "title"
-        },
+        {"data": "title"},
         {"data": "parent"},
         {"data": "slug"},        
         {
@@ -88,14 +85,6 @@ $('#new').on('click', function (e) {
     $("#myModal").modal();
 });
 
-
-
-
-
-
-
-
-
 let riskTableAttribute = $("#datatables").attr("modelslug")
 let table = $('#datatables').DataTable({
     // "processing": true,    //comment out to cancel server side
@@ -106,12 +95,12 @@ let table = $('#datatables').DataTable({
     },
     "columns": [
         {"data": "id"},
-        { "data": "title"
+        {"data": "title"},
 //        { "data": "title",
 //       "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
 //            $(nTd).html("<a href='" + window.location.href + oData.slug + "/'>" + oData.title+ "</a>");
 //            }
-        },
+//        },
         {"data": "parent"},
         {"data": "description"},
         {"data": "slug"},        
@@ -192,11 +181,6 @@ $('#new').on('click', function (e) {
     $('#modal_title').text('NEW');
     $("#myModal").modal();
 });
-
-
-
-
-
 
 let responseTableAttribute = $("#datatables2").attr("modelslug")
 let responseTable = $('#datatables2').DataTable({
